@@ -20,65 +20,105 @@ using namespace geode::prelude;
 using namespace cocos2d;
 
 
-// Custom Layer Class with Blue Gradient and "X" Button
 class ChristianModLayer : public CCLayer {
 public:
     bool init() {
         if (!CCLayer::init()) return false;
 
-        // Get window size using cocos2d
+/* -------------------------------------------------------------------------- */
+/*                              Utility Variables                             */
+/* -------------------------------------------------------------------------- */
         auto winSize = CCDirector::sharedDirector()->getWinSize();
-
-        // Create a blue gradient background
+/* -------------------------------------------------------------------------- */
+/*                             Background Gradient                            */
+/* -------------------------------------------------------------------------- */
         auto gradient = CCLayerGradient::create(
-            ccc4(0, 33, 255, 255),   // Starting color (blue)
-            ccc4(0, 128, 255, 255)  // Ending color (lighter blue)
+            ccc4(0, 33, 255, 255), 
+            ccc4(0, 128, 255, 255)
         );
-        this->addChild(gradient);
-
-        // Create a label and add it to the layer
+/* -------------------------------------------------------------------------- */
+/*                                 Layer Title                                */
+/* -------------------------------------------------------------------------- */
         auto ttl = CCLabelBMFont::create("ChristianMod", "goldFont.fnt");
         ttl->setPosition(284.500, 302.000);
-        ttl->setScale(1.375);
-        this->addChild(ttl);
-
-        // The "X" button that goes back to the previous scene
+        ttl->setScale(1.175);
+/* -------------------------------------------------------------------------- */
+/*                                Close Button                                */
+/* -------------------------------------------------------------------------- */
         auto closeButton = CCMenuItemSpriteExtra::create(
-            CCSprite::createWithSpriteFrameName("GJ_closeBtn_001.png"),  // Use built-in "X" button sprite
+            CCSprite::createWithSpriteFrameName("GJ_closeBtn_001.png"),
             this,
             menu_selector(ChristianModLayer::onClose)
         );
+/* -------------------------------------------------------------------------- */
+/*                                HAYFT Button                                */
+/* -------------------------------------------------------------------------- */
+        auto HowAreYouFeelingTodaySPR = CircleButtonSprite::createWithSprite(
+            "hayft_icon.png"_spr, 
+            1.0f, 
+            CircleBaseColor::Green, 
+            CircleBaseSize::Small
+            );
 
-        // Define menus
-        auto closeButtonMenu = CCMenu::create(closeButton, nullptr); // A menu to hold the closeButton.
-        auto topRightSideMenu = CCMenu::create(); // A menu to hold button on the top right side of the screen.
+        HowAreYouFeelingTodaySPR->setScale(1.225);
+
+        auto HowAreYouFeelingTodayButton = CCMenuItemSpriteExtra::create(
+            HowAreYouFeelingTodaySPR,
+            this,
+            menu_selector(ChristianModLayer::onHowAreYouFeelingTodayButton)
+        );
+/* -------------------------------------------------------------------------- */
+/*                         Scale and position buttons                         */
+/* -------------------------------------------------------------------------- */
+/* ------------------------------- closeButton ------------------------------ */
+        closeButton->setPosition({-12.000, 10.000});
+/* ----------------------- HowAreYouFeelingTodayButton ---------------------- */
 
 
-
-
-        closeButtonMenu->setPosition({ 35, winSize.height - 35 });  // Position in the top left corner
-        closeButton->setPosition({-12.000, 10.000}); // Set position
-
-        topRightSideMenu->setPosition(256.000, 67.000);
-        topRightSideMenu->setScaleX(0.100);
-        topRightSideMenu->setScaleY(0.575);
-
-        // Add menus
-        this->addChild(topRightSideMenu);
+/* -------------------------------------------------------------------------- */
+/*                                Define Menus                                */
+/* -------------------------------------------------------------------------- */
+        auto closeButtonMenu = CCMenu::create(closeButton, nullptr);
+        auto HAYFTMenu = CCMenu::create();
+/* -------------------------------------------------------------------------- */
+/*                          Scale and position menus                          */
+/* -------------------------------------------------------------------------- */
+/* ----------------------------- closeButtonMenu ---------------------------- */
+        closeButtonMenu->setPosition({ 35, winSize.height - 35 });
+/* -------------------------------- HAYFTMenu ------------------------------- */
+        HAYFTMenu->setPosition(569.0, 258.0);
+        HAYFTMenu->setScale(1.100);
+/* -------------------------------------------------------------------------- */
+/*                            Add children to menus                           */
+/* -------------------------------------------------------------------------- */
+        HAYFTMenu->addChild(HowAreYouFeelingTodayButton);
+/* -------------------------------------------------------------------------- */
+/*                            Add children to layer                           */
+/* -------------------------------------------------------------------------- */
+        this->addChild(gradient);
+        this->addChild(ttl);
+/* -------------------------------------------------------------------------- */
+/*                             Add menus to layer                             */
+/* -------------------------------------------------------------------------- */
+        this->addChild(HAYFTMenu);
         this->addChild(closeButtonMenu);
-
-        // Add elements
-
-        // Set ID's
-        topRightSideMenu->setID("cmod-top-right-side-menu");
+/* -------------------------------------------------------------------------- */
+/*                                   Set IDs                                  */
+/* -------------------------------------------------------------------------- */
+        gradient->setID("bg-gradient");
+        ttl->setID("title");
+        HAYFTMenu->setID("cmod-top-right-side-menu");
         closeButtonMenu->setID("cmod-close-button-menu");
         closeButton->setID("cmod-close-button");
 
 
 
-        return true; // Indicates that the layer initialized successfully.
+        return true;
     }
-
+    void onHowAreYouFeelingTodayButton(CCObject* sender)
+    {
+        std::cout<<"Nice!";
+    }
     // "X" button callback to pop the current scene and go back to the previous one
     void onClose(CCObject* sender) {
         // Safely pop the current scene, going back to the previous one
