@@ -142,7 +142,7 @@ public:
         gradient->setID("cmod-bg-gradient");
         ttl->setID("cmod-title");
         subttl->setID("cmod-sub-title");
-        HAYFTMenu->setID("cmod-top-right-side-menu");
+        HAYFTMenu->setID("cmod-hayft-menu");
         closeButtonMenu->setID("cmod-close-button-menu");
         closeButton->setID("cmod-close-button");
         VOTD_BG->setID("cmod-votd-bg");
