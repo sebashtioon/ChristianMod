@@ -1,0 +1,19 @@
+{
+	"geode": "3.3.1",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206",
+		"ios": "2.206"
+	},
+	"id": "sebashtioon.christianmod",
+	"name": "ChristianMod",
+	"version": "v1.0.0",
+	"developer": "sebashtioon",
+	"description": "Bringing God's Word to Geometry Dash.",
+	"resources": {
+		"sprites": [
+			"resources/sprites/*.png"
+		]
+	}
+}
