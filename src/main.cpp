@@ -60,6 +60,14 @@ public:
         );
         closeButton->setPosition({-12.000, 10.000});
 /* -------------------------------------------------------------------------- */
+/*                                 InfoButton                                 */
+/* -------------------------------------------------------------------------- */
+        auto InfoButton = CCMenuItemSpriteExtra::create(
+            CCSprite::createWithSpriteFrameName("GJ_infoBtn_001.png"),
+            this,
+            menu_selector(ChristianModLayer::onHowAreYouFeelingTodayButton)
+        );
+/* -------------------------------------------------------------------------- */
 /*                         HowAreYouFeelingTodayButton                        */
 /* -------------------------------------------------------------------------- */
         auto HowAreYouFeelingTodaySPR = CircleButtonSprite::createWithSprite(
@@ -106,20 +114,20 @@ public:
 /*                                Define Menus                                */
 /* -------------------------------------------------------------------------- */
         auto closeButtonMenu = CCMenu::create(closeButton, nullptr);
-        auto HAYFTMenu = CCMenu::create();
+        auto topRightMenu = CCMenu::create();
         auto prayButtonMenu = CCMenu::create();
 /* -------------------------------------------------------------------------- */
 /*                          Scale and position menus                          */
 /* -------------------------------------------------------------------------- */
 /* ----------------------------- closeButtonMenu ---------------------------- */
         closeButtonMenu->setPosition({ 35, winSize.height - 35 });
-/* -------------------------------- HAYFTMenu ------------------------------- */
-        HAYFTMenu->setPosition(569.0, 258.0);
-        HAYFTMenu->setScale(1.100);
+/* -------------------------------- topRightMenu ------------------------------- */
+        topRightMenu->setPosition(569.0, 258.0);
+        topRightMenu->setScale(1.100);
 /* -------------------------------------------------------------------------- */
 /*                            Add children to menus                           */
 /* -------------------------------------------------------------------------- */
-        HAYFTMenu->addChild(HowAreYouFeelingTodayButton);
+        topRightMenu->addChild(HowAreYouFeelingTodayButton);
         prayButtonMenu->addChild(prayButton);
 /* -------------------------------------------------------------------------- */
 /*                            Add children to layer                           */
@@ -133,7 +141,7 @@ public:
 /* -------------------------------------------------------------------------- */
 /*                             Add menus to layer                             */
 /* -------------------------------------------------------------------------- */
-        this->addChild(HAYFTMenu);
+        this->addChild(topRightMenu);
         this->addChild(closeButtonMenu);
         this->addChild(prayButtonMenu);
 /* -------------------------------------------------------------------------- */
@@ -142,7 +150,7 @@ public:
         gradient->setID("cmod-bg-gradient");
         ttl->setID("cmod-title");
         subttl->setID("cmod-sub-title");
-        HAYFTMenu->setID("cmod-hayft-menu");
+        topRightMenu->setID("cmod-top-right-menu");
         closeButtonMenu->setID("cmod-close-button-menu");
         closeButton->setID("cmod-close-button");
         VOTD_BG->setID("cmod-votd-bg");
