@@ -139,16 +139,16 @@ public:
 /* -------------------------------------------------------------------------- */
 /*                                   Set IDs                                  */
 /* -------------------------------------------------------------------------- */
-        gradient->setID("bg-gradient");
-        ttl->setID("title");
-        subttl->setID("sub-title");
+        gradient->setID("cmod-bg-gradient");
+        ttl->setID("cmod-title");
+        subttl->setID("cmod-sub-title");
         HAYFTMenu->setID("cmod-top-right-side-menu");
         closeButtonMenu->setID("cmod-close-button-menu");
         closeButton->setID("cmod-close-button");
-        VOTD_BG->setID("votd-bg");
-        VOTD_ttl->setID("votd-ttl");
-        prayButtonMenu->setID("pray-button-menu");
-        prayButton->setID("pray-button");
+        VOTD_BG->setID("cmod-votd-bg");
+        VOTD_ttl->setID("cmod-votd-ttl");
+        prayButtonMenu->setID("cmod-pray-button-menu");
+        prayButton->setID("cmod-pray-button");
 
 
 
