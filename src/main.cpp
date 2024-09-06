@@ -37,9 +37,10 @@ public:
         this->addChild(gradient);
 
         // Create a label and add it to the layer
-        auto label = CCLabelBMFont::create("Yo wassup!", "goldFont.fnt");
-        label->setPosition(winSize.width / 2, winSize.height / 2);
-        this->addChild(label);
+        auto ttl = CCLabelBMFont::create("ChristianMod", "goldFont.fnt");
+        ttl->setPosition(284.500, 302.000);
+        ttl->setScale(1.375);
+        this->addChild(ttl);
 
         // The "X" button that goes back to the previous scene
         auto closeButton = CCMenuItemSpriteExtra::create(
