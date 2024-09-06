@@ -68,9 +68,7 @@ public:
             CircleBaseColor::Green, 
             CircleBaseSize::Small
             );
-
         HowAreYouFeelingTodaySPR->setScale(1.225);
-
         auto HowAreYouFeelingTodayButton = CCMenuItemSpriteExtra::create(
             HowAreYouFeelingTodaySPR,
             this,
@@ -94,7 +92,6 @@ public:
         auto VOTD_ttl = CCLabelBMFont::create("Verse Of The Day", "bigFont.fnt");
         VOTD_ttl->setPosition({135.f, 253.f});
         VOTD_ttl->setScale({0.625});
-
 /* -------------------------------------------------------------------------- */
 /*                                   VOTD_BG                                  */
 /* -------------------------------------------------------------------------- */
@@ -219,7 +216,7 @@ class $modify(CustomMenuLayer, MenuLayer) {
         // Create the FLAlertLayer with "AMEN" and "PRAY" options
         auto alert = FLAlertLayer::create(
             this,  // Set this layer as the delegate to handle button callbacks
-            "Daily Bible Verse",
+            "Verse Of The Day",
             "<cr>John 3:16</c> - For God so loved the world that he gave his one and only Son, "
             "that whoever believes in him shall not perish but have eternal life.",
             "AMEN",
