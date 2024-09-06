@@ -5,6 +5,8 @@
 #include <Geode/Geode.hpp>
 #include <cocos2d.h>
 
+#include <Geode/Enums.hpp>
+
 #include <Geode/modify/MenuLayer.hpp>
 #include <Geode/modify/CreatorLayer.hpp>
 
@@ -33,8 +35,8 @@ public:
 /*                             Background Gradient                            */
 /* -------------------------------------------------------------------------- */
         auto gradient = CCLayerGradient::create(
-            ccc4(0, 33, 255, 255), 
-            ccc4(0, 128, 255, 255)
+            ccc4(0, 128, 255, 255),
+            ccc4(0, 33, 255, 255)
         );
 /* -------------------------------------------------------------------------- */
 /*                                 Layer Title                                */
@@ -43,15 +45,22 @@ public:
         ttl->setPosition(284.500, 302.000);
         ttl->setScale(1.175);
 /* -------------------------------------------------------------------------- */
-/*                                Close Button                                */
+/*                               Layer Subtitle                               */
+/* -------------------------------------------------------------------------- */
+        auto subttl = CCLabelBMFont::create("by sebashtioon", "chatFont.fnt");
+        subttl->setPosition(336.5f, 281.f);
+        subttl->setScale(0.6f);
+/* -------------------------------------------------------------------------- */
+/*                                 closeButton                                */
 /* -------------------------------------------------------------------------- */
         auto closeButton = CCMenuItemSpriteExtra::create(
             CCSprite::createWithSpriteFrameName("GJ_closeBtn_001.png"),
             this,
             menu_selector(ChristianModLayer::onClose)
         );
+        closeButton->setPosition({-12.000, 10.000});
 /* -------------------------------------------------------------------------- */
-/*                                HAYFT Button                                */
+/*                         HowAreYouFeelingTodayButton                        */
 /* -------------------------------------------------------------------------- */
         auto HowAreYouFeelingTodaySPR = CircleButtonSprite::createWithSprite(
             "hayft_icon.png"_spr, 
@@ -68,18 +77,40 @@ public:
             menu_selector(ChristianModLayer::onHowAreYouFeelingTodayButton)
         );
 /* -------------------------------------------------------------------------- */
-/*                         Scale and position buttons                         */
+/*                                 PrayButton                                 */
 /* -------------------------------------------------------------------------- */
-/* ------------------------------- closeButton ------------------------------ */
-        closeButton->setPosition({-12.000, 10.000});
-/* ----------------------- HowAreYouFeelingTodayButton ---------------------- */
+        auto prayButtonText = CCLabelBMFont::create("PRAY", "bigFont.fnt");
+        prayButtonText->setPosition({ 46.f, 18.f });
+        prayButtonText->setScale(.725f);
+        auto prayButton = CCMenuItemSpriteExtra::create(
+            CCSprite::createWithSpriteFrameName("GJ_longBtn01_001.png"),
+            this,
+            menu_selector(ChristianModLayer::onPrayButtonPressed));
+            prayButton->addChild(prayButtonText);
+            prayButton->setPosition({-152.0, -131.0});
+/* -------------------------------------------------------------------------- */
+/*                                  VOTD_ttl                                  */
+/* -------------------------------------------------------------------------- */
+        auto VOTD_ttl = CCLabelBMFont::create("Verse Of The Day", "bigFont.fnt");
+        VOTD_ttl->setPosition({135.f, 253.f});
+        VOTD_ttl->setScale({0.625});
 
-
+/* -------------------------------------------------------------------------- */
+/*                                   VOTD_BG                                  */
+/* -------------------------------------------------------------------------- */
+        auto VOTD_BG = cocos2d::extension::CCScale9Sprite::create("square02b_001.png", { .0f, .0f, 80.0f, 80.0f });
+        VOTD_BG->setContentSize({ 153.f, 95.f });
+        VOTD_BG->setScaleX(1.375);
+        VOTD_BG->setScaleY(2.f);
+        VOTD_BG->setAnchorPoint({ .5f, 1.f });
+        VOTD_BG->setColor({0, 14, 190});
+        VOTD_BG->setPosition({135.f, 240.f});
 /* -------------------------------------------------------------------------- */
 /*                                Define Menus                                */
 /* -------------------------------------------------------------------------- */
         auto closeButtonMenu = CCMenu::create(closeButton, nullptr);
         auto HAYFTMenu = CCMenu::create();
+        auto prayButtonMenu = CCMenu::create();
 /* -------------------------------------------------------------------------- */
 /*                          Scale and position menus                          */
 /* -------------------------------------------------------------------------- */
@@ -92,38 +123,56 @@ public:
 /*                            Add children to menus                           */
 /* -------------------------------------------------------------------------- */
         HAYFTMenu->addChild(HowAreYouFeelingTodayButton);
+        prayButtonMenu->addChild(prayButton);
 /* -------------------------------------------------------------------------- */
 /*                            Add children to layer                           */
 /* -------------------------------------------------------------------------- */
         this->addChild(gradient);
         this->addChild(ttl);
+        this->addChild(subttl);
+        this->addChild(VOTD_BG, 1);
+        this->addChild(VOTD_ttl);
+
 /* -------------------------------------------------------------------------- */
 /*                             Add menus to layer                             */
 /* -------------------------------------------------------------------------- */
         this->addChild(HAYFTMenu);
         this->addChild(closeButtonMenu);
+        this->addChild(prayButtonMenu);
 /* -------------------------------------------------------------------------- */
 /*                                   Set IDs                                  */
 /* -------------------------------------------------------------------------- */
         gradient->setID("bg-gradient");
         ttl->setID("title");
+        subttl->setID("sub-title");
         HAYFTMenu->setID("cmod-top-right-side-menu");
         closeButtonMenu->setID("cmod-close-button-menu");
         closeButton->setID("cmod-close-button");
+        VOTD_BG->setID("votd-bg");
+        VOTD_ttl->setID("votd-ttl");
+        prayButtonMenu->setID("pray-button-menu");
+        prayButton->setID("pray-button");
 
 
 
         return true;
     }
+
+    void onPrayButtonPressed(CCObject* sender)
+    {
+        std::cout<<"Nice!";
+    }
+
     void onHowAreYouFeelingTodayButton(CCObject* sender)
     {
         std::cout<<"Nice!";
     }
-    // "X" button callback to pop the current scene and go back to the previous one
+
+
     void onClose(CCObject* sender) {
-        // Safely pop the current scene, going back to the previous one
         CCDirector::sharedDirector()->popScene();
     }
+
 
     // Static create function to construct the layer
     static ChristianModLayer* create() {
