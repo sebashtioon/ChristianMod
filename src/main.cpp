@@ -31,7 +31,7 @@ public:
 
         // Create a blue gradient background
         auto gradient = CCLayerGradient::create(
-            ccc4(155, 0, 255, 255),   // Starting color (blue)
+            ccc4(0, 33, 255, 255),   // Starting color (blue)
             ccc4(0, 128, 255, 255)  // Ending color (lighter blue)
         );
         this->addChild(gradient);
@@ -57,7 +57,6 @@ public:
 
         closeButtonMenu->setPosition({ 35, winSize.height - 35 });  // Position in the top left corner
         closeButton->setPosition({-12.000, 10.000}); // Set position
-        closeButton->setScale(0.750); // Set the size
 
         topRightSideMenu->setPosition(256.000, 67.000);
         topRightSideMenu->setScaleX(0.100);
@@ -159,8 +158,6 @@ class $modify(CustomCreatorLayer, CreatorLayer)
 {
     bool init() override {
         if (!CreatorLayer::init()) return false;
-
-        // TODO: ADD A BUTTON FOR THE MAIN MENU
         
         auto BibleIcon = CCSprite::create("BibleIcon.png"_spr);
 
