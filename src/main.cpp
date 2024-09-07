@@ -15,6 +15,8 @@
 
 #include <Geode/binding/FLAlertLayer.hpp>
 
+#include <Geode/ui/MDTextArea.hpp>
+#include <Geode/binding/TextArea.hpp>
 #include <Geode/ui/BasedButtonSprite.hpp>
 #include <Geode/binding/CCMenuItemSpriteExtra.hpp>
 
@@ -24,6 +26,9 @@ using namespace cocos2d;
 
 class ChristianModLayer : public CCLayer {
 public:
+    struct Fields {
+
+    };
     bool init() {
         if (!CCLayer::init()) return false;
 
@@ -102,15 +107,12 @@ public:
         VOTD_ttl->setPosition({135.f, 253.f});
         VOTD_ttl->setScale({0.625});
 /* -------------------------------------------------------------------------- */
-/*                                   VOTD_BG                                  */
+/*                                VOTD_TextArea                               */
 /* -------------------------------------------------------------------------- */
-        auto VOTD_BG = cocos2d::extension::CCScale9Sprite::create("square02b_001.png", { .0f, .0f, 80.0f, 80.0f });
-        VOTD_BG->setContentSize({ 153.f, 95.f });
-        VOTD_BG->setScaleX(1.375);
-        VOTD_BG->setScaleY(2.f);
-        VOTD_BG->setAnchorPoint({ .5f, 1.f });
-        VOTD_BG->setColor({0, 14, 190});
-        VOTD_BG->setPosition({135.f, 240.f});
+        auto VOTD_TextArea = MDTextArea::create("<cr>John 3:16</c> - For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.", 
+        {200.0, 200.0});
+        VOTD_TextArea->setPosition({135.f, 145.f});
+        VOTD_TextArea->setScale(0.975);
 /* -------------------------------------------------------------------------- */
 /*                                Define Menus                                */
 /* -------------------------------------------------------------------------- */
@@ -137,8 +139,8 @@ public:
         this->addChild(gradient);
         this->addChild(ttl);
         this->addChild(subttl);
-        this->addChild(VOTD_BG, 1);
         this->addChild(VOTD_ttl);
+        this->addChild(VOTD_TextArea);
 
 /* -------------------------------------------------------------------------- */
 /*                             Add menus to layer                             */
@@ -155,8 +157,8 @@ public:
         topRightMenu->setID("cmod-top-right-menu");
         closeButtonMenu->setID("cmod-close-button-menu");
         closeButton->setID("cmod-close-button");
-        VOTD_BG->setID("cmod-votd-bg");
         VOTD_ttl->setID("cmod-votd-ttl");
+        VOTD_TextArea->setID("cmod-votd-textarea");
         prayButtonMenu->setID("cmod-pray-button-menu");
         prayButton->setID("cmod-pray-button");
 
