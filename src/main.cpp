@@ -65,8 +65,9 @@ public:
         auto InfoButton = CCMenuItemSpriteExtra::create(
             CCSprite::createWithSpriteFrameName("GJ_infoBtn_001.png"),
             this,
-            menu_selector(ChristianModLayer::onHowAreYouFeelingTodayButton)
+            menu_selector(ChristianModLayer::onInfoButton)
         );
+        InfoButton->setPositionY(48.f);
 /* -------------------------------------------------------------------------- */
 /*                         HowAreYouFeelingTodayButton                        */
 /* -------------------------------------------------------------------------- */
@@ -121,13 +122,14 @@ public:
 /* -------------------------------------------------------------------------- */
 /* ----------------------------- closeButtonMenu ---------------------------- */
         closeButtonMenu->setPosition({ 35, winSize.height - 35 });
-/* -------------------------------- topRightMenu ------------------------------- */
+/* ------------------------------ topRightMenu ------------------------------ */
         topRightMenu->setPosition(569.0, 258.0);
         topRightMenu->setScale(1.100);
 /* -------------------------------------------------------------------------- */
 /*                            Add children to menus                           */
 /* -------------------------------------------------------------------------- */
         topRightMenu->addChild(HowAreYouFeelingTodayButton);
+        topRightMenu->addChild(InfoButton);
         prayButtonMenu->addChild(prayButton);
 /* -------------------------------------------------------------------------- */
 /*                            Add children to layer                           */
@@ -162,6 +164,12 @@ public:
 
         return true;
     }
+
+    void onInfoButton(CCObject* sender)
+    {
+        std::cout<<"Nice!";
+    }
+
 
     void onPrayButtonPressed(CCObject* sender)
     {
