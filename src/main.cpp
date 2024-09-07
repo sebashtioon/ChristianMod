@@ -89,6 +89,11 @@ public:
             menu_selector(ChristianModLayer::onHowAreYouFeelingTodayButton)
         );
 /* -------------------------------------------------------------------------- */
+/*                                 HAYFT_POPUP                                */
+/* -------------------------------------------------------------------------- */
+        auto HAYFT_POPUP = cocos2d::extension::CCScale9Sprite::create("square02b_001.png", { .0f, .0f, 80.0f, 80.0f });
+        HAYFT_POPUP->setContentSize({ 153.f, 95.f });
+/* -------------------------------------------------------------------------- */
 /*                                 PrayButton                                 */
 /* -------------------------------------------------------------------------- */
         auto prayButtonText = CCLabelBMFont::create("PRAY", "bigFont.fnt");
@@ -141,6 +146,7 @@ public:
         this->addChild(subttl);
         this->addChild(VOTD_ttl);
         this->addChild(VOTD_TextArea);
+        this->addChild(HAYFT_POPUP);
 
 /* -------------------------------------------------------------------------- */
 /*                             Add menus to layer                             */
@@ -161,6 +167,7 @@ public:
         VOTD_TextArea->setID("cmod-votd-textarea");
         prayButtonMenu->setID("cmod-pray-button-menu");
         prayButton->setID("cmod-pray-button");
+        HAYFT_POPUP->setID("cmod-hayft-popup");
 
 
 
@@ -178,10 +185,12 @@ public:
         std::cout<<"Nice!";
     }
 
-    void onHowAreYouFeelingTodayButton(CCObject* sender)
+    void onHowAreYouFeelingTodayButton(CCObject* sender) 
     {
-        std::cout<<"Nice!";
+        std::cout<<"thing";
+
     }
+
 
 
     void onClose(CCObject* sender) {
