@@ -1,3 +1,365 @@
-John 3:16 - For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.
-Psalm 23:1 - The Lord is my shepherd; I shall not want.
-Romans 8:28 - And we know that in all things God works for the good of those who love him, who have been called according to his purpose.
+<cr>Genesis 1:1</c> - In the beginning God created the heavens and the earth.
+<cr>John 3:16</c> - For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.
+<cr>Romans 8:28</c> - And we know that in all things God works for the good of those who love him, who have been called according to his purpose.
+<cr>Psalm 23:1</c> - The Lord is my shepherd, I lack nothing.
+<cr>Philippians 4:13</c> - I can do all this through him who gives me strength.
+<cr>Matthew 6:33</c> - But seek first his kingdom and his righteousness, and all these things will be given to you as well.
+<cr>Isaiah 41:10</c> - So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.
+<cr>Jeremiah 29:11</c> - For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.
+<cr>Proverbs 3:5</c> - Trust in the Lord with all your heart and lean not on your own understanding.
+<cr>Hebrews 11:1</c> - Now faith is confidence in what we hope for and assurance about what we do not see.
+<cr>2 Corinthians 5:17</c> - Therefore, if anyone is in Christ, the new creation has come: The old has gone, the new is here!
+<cr>Psalm 46:10</c> - He says, "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth."
+<cr>James 1:5</c> - If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.
+<cr>1 Peter 5:7</c> - Cast all your anxiety on him because he cares for you.
+<cr>Matthew 11:28</c> - Come to me, all you who are weary and burdened, and I will give you rest.
+<cr>Psalm 119:105</c> - Your word is a lamp for my feet, a light on my path.
+<cr>Isaiah 40:31</c> - But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.
+<cr>Romans 12:2</c> - Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God’s will is—his good, pleasing and perfect will.
+<cr>Matthew 28:19</c> - Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.
+<cr>Joshua 1:9</c> - Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.
+<cr>Philippians 4:6</c> - Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.
+<cr>Galatians 5:22-23</c> - But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law.
+<cr>John 14:6</c> - Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me."
+<cr>Romans 10:9</c> - If you declare with your mouth, "Jesus is Lord," and believe in your heart that God raised him from the dead, you will be saved.
+<cr>Ephesians 2:8-9</c> - For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—not by works, so that no one can boast.
+<cr>1 Corinthians 13:4-5</c> - Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs.
+<cr>2 Timothy 1:7</c> - For the Spirit God gave us does not make us timid, but gives us power, love and self-discipline.
+<cr>Isaiah 26:3</c> - You will keep in perfect peace those whose minds are steadfast, because they trust in you.
+<cr>Psalm 27:1</c> - The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?
+<cr>Colossians 3:23</c> - Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.
+<cr>1 John 4:18</c> - There is no fear in love. But perfect love drives out fear, because fear has to do with punishment. The one who fears is not made perfect in love.
+<cr>Matthew 5:16</c> - In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven.
+<cr>1 Corinthians 10:13</c> - No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out so that you can endure it.
+<cr>2 Corinthians 12:9</c> - But he said to me, "My grace is sufficient for you, for my power is made perfect in weakness." Therefore I will boast all the more gladly about my weaknesses, so that Christ’s power may rest on me.
+<cr>James 1:12</c> - Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him.
+<cr>John 1:1</c> - In the beginning was the Word, and the Word was with God, and the Word was God.
+<cr>Psalm 34:8</c> - Taste and see that the Lord is good; blessed is the one who takes refuge in him.
+<cr>Proverbs 18:10</c> - The name of the Lord is a fortified tower; the righteous run to it and are safe.
+<cr>1 Peter 3:15</c> - But in your hearts revere Christ as Lord. Always be prepared to give an answer to everyone who asks you to give the reason for the hope that you have. But do this with gentleness and respect.
+<cr>Hebrews 12:2</c> - Fixing our eyes on Jesus, the pioneer and perfecter of faith. For the joy set before him he endured the cross, scorning its shame, and sat down at the right hand of the throne of God.
+<cr>Proverbs 16:3</c> - Commit to the Lord whatever you do, and he will establish your plans.
+<cr>Matthew 22:37-39</c> - Jesus replied: "‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ This is the first and greatest commandment. And the second is like it: ‘Love your neighbor as yourself.’"
+<cr>Psalm 55:22</c> - Cast your cares on the Lord and he will sustain you; he will never let the righteous be shaken.
+<cr>Romans 5:8</c> - But God demonstrates his own love for us in this: While we were still sinners, Christ died for us.
+<cr>John 16:33</c> - I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world.
+<cr>Hebrews 13:8</c> - Jesus Christ is the same yesterday and today and forever.
+<cr>2 Corinthians 5:7</c> - For we live by faith, not by sight.
+<cr>Psalm 37:4</c> - Take delight in the Lord, and he will give you the desires of your heart.
+<cr>Isaiah 53:5</c> - But he was pierced for our transgressions, he was crushed for our iniquities; the punishment that brought us peace was on him, and by his wounds we are healed.
+<cr>James 4:7</c> - Submit yourselves, then, to God. Resist the devil, and he will flee from you.
+<cr>Romans 6:23</c> - For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.
+<cr>Psalm 118:24</c> - The Lord has done it this very day; let us rejoice today and be glad.
+<cr>Proverbs 3:6</c> - In all your ways submit to him, and he will make your paths straight.
+<cr>Isaiah 40:29</c> - He gives strength to the weary and increases the power of the weak.
+<cr>1 Corinthians 16:13</c> - Be on your guard; stand firm in the faith; be courageous; be strong.
+<cr>James 1:17</c> - Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows.
+<cr>Matthew 7:7</c> - Ask and it will be given to you; seek and you will find; knock and the door will be opened to you.
+<cr>Isaiah 12:2</c> - Surely God is my salvation; I will trust and not be afraid. The Lord, the Lord himself, is my strength and my defense; he has become my salvation.
+<cr>Luke 6:38</c> - Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you.
+<cr>Jeremiah 33:3</c> - Call to me and I will answer you and tell you great and unsearchable things you do not know.
+<cr>John 15:5</c> - I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing.
+<cr>Romans 15:13</c> - May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit.
+<cr>Psalm 62:8</c> - Trust in him at all times, you people; pour out your hearts to him, for God is our refuge.
+<cr>1 Thessalonians 5:16-18</c> - Rejoice always, pray continually, give thanks in all circumstances; for this is God’s will for you in Christ Jesus.
+<cr>Hebrews 10:23</c> - Let us hold unswervingly to the hope we profess, for he who promised is faithful.
+<cr>Psalm 56:3</c> - When I am afraid, I put my trust in you.
+<cr>Isaiah 43:2</c> - When you pass through the waters, I will be with you; and when you pass through the rivers, they will not sweep over you. When you walk through the fire, you will not be burned; the flames will not set you ablaze.
+<cr>Romans 8:1</c> - Therefore, there is now no condemnation for those who are in Christ Jesus.
+<cr>John 13:35</c> - By this everyone will know that you are my disciples, if you love one another.
+<cr>Psalm 91:1</c> - Whoever dwells in the shelter of the Most High will rest in the shadow of the Almighty.
+<cr>Psalm 119:11</c> - I have hidden your word in my heart that I might not sin against you.
+<cr>Proverbs 29:25</c> - Fear of man will prove to be a snare, but whoever trusts in the Lord is kept safe.
+<cr>Isaiah 55:6</c> - Seek the Lord while he may be found; call on him while he is near.
+<cr>Matthew 6:9-13</c> - This, then, is how you should pray: "Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as it is in heaven. Give us today our daily bread. And forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from the evil one."
+<cr>2 Corinthians 9:6</c> - Remember this: Whoever sows sparingly will also reap sparingly, and whoever sows generously will also reap generously.
+<cr>Romans 12:12</c> - Be joyful in hope, patient in affliction, faithful in prayer.
+<cr>1 Peter 1:3</c> - Praise be to the God and Father of our Lord Jesus Christ! In his great mercy he has given us new birth into a living hope through the resurrection of Jesus Christ from the dead.
+<cr>Philippians 2:3</c> - Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves.
+<cr>Psalm 119:2</c> - Blessed are those who keep his statutes and seek him with all their heart.
+<cr>2 Timothy 3:16-17</c> - All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.
+<cr>Matthew 19:26</c> - Jesus looked at them and said, "With man this is impossible, but with God all things are possible."
+<cr>Isaiah 40:8</c> - The grass withers and the flowers fall, but the word of our God endures forever.
+<cr>Psalm 100:4</c> - Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise his name.
+<cr>Hebrews 4:12</c> - For the word of God is alive and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes of the heart.
+<cr>1 Corinthians 15:58</c> - Therefore, my dear brothers and sisters, stand firm. Let nothing move you. Always give yourselves fully to the work of the Lord, because you know that your labor in the Lord is not in vain.
+<cr>Psalm 145:18</c> - The Lord is near to all who call on him, to all who call on him in truth.
+<cr>Proverbs 4:23</c> - Above all else, guard your heart, for everything you do flows from it.
+<cr>Isaiah 6:8</c> - Then I heard the voice of the Lord saying, "Whom shall I send? And who will go for us?" And I said, "Here am I. Send me!"
+<cr>Matthew 18:20</c> - For where two or three gather in my name, there am I with them.
+<cr>Romans 3:23</c> - For all have sinned and fall short of the glory of God.
+<cr>John 15:13</c> - Greater love has no one than this: to lay down one’s life for one’s friends.
+<cr>Psalm 139:14</c> - I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well.
+<cr>Philippians 1:6</c> - Being confident of this, that he who began a good work in you will carry it on to completion until the day of Christ Jesus.
+<cr>1 Thessalonians 5:11</c> - Therefore encourage one another and build each other up, just as in fact you are doing.
+<cr>Isaiah 54:17</c> - No weapon forged against you will prevail, and you will refute every tongue that accuses you. This is the heritage of the servants of the Lord, and this is their vindication from me, declares the Lord.
+<cr>Psalm 9:1</c> - I will give thanks to you, Lord, with all my heart; I will tell of all your wonderful deeds.
+<cr>Luke 12:22</c> - Then Jesus said to his disciples: "Therefore I tell you, do not worry about your life, what you will eat; or about your body, what you will wear."
+<cr>Romans 12:21</c> - Do not be overcome by evil, but overcome evil with good.
+<cr>John 11:25</c> - Jesus said to her, "I am the resurrection and the life. The one who believes in me will live, even though they die."
+<cr>Psalm 150:6</c> - Let everything that has breath praise the Lord. Praise the Lord.
+<cr>Galatians 6:9</c> - Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up.
+<cr>1 John 3:16</c> - This is how we know what love is: Jesus Christ laid down his life for us. And we ought to lay down our lives for our brothers and sisters.
+<cr>Psalm 16:8</c> - I keep my eyes always on the Lord. With him at my right hand, I will not be shaken.
+<cr>Isaiah 55:11</c> - So is my word that goes out from my mouth: It will not return to me empty, but will accomplish what I desire and achieve the purpose for which I sent it.
+<cr>1 Peter 4:10</c> - Each of you should use whatever gift you have received to serve others, as faithful stewards of God’s grace in its various forms.
+<cr>Psalm 19:14</c> - May these words of my mouth and this meditation of my heart be pleasing in your sight, Lord, my Rock and my Redeemer.
+<cr>John 8:12</c> - When Jesus spoke again to the people, he said, "I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life."
+<cr>Proverbs 22:6</c> - Start children off on the way they should go, and even when they are old they will not turn from it.
+<cr>Hebrews 13:5</c> - Keep your lives free from the love of money and be content with what you have, because God has said, "Never will I leave you; never will I forsake you."
+<cr>Psalm 46:1</c> - God is our refuge and strength, an ever-present help in trouble.
+<cr>James 5:16</c> - Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous person is powerful and effective.
+<cr>Psalm 19:1</c> - The heavens declare the glory of God; the skies proclaim the work of his hands.
+<cr>Matthew 5:9</c> - Blessed are the peacemakers, for they will be called children of God.
+<cr>Romans 14:8</c> - If we live, we live for the Lord; and if we die, we die for the Lord. So, whether we live or die, we belong to the Lord.
+<cr>John 6:35</c> - Then Jesus declared, "I am the bread of life. Whoever comes to me will never go hungry, and whoever believes in me will never be thirsty."
+<cr>Psalm 150:1</c> - Praise the Lord. Praise God in his sanctuary; praise him in his mighty heavens.
+<cr>1 Peter 2:24</c> - He himself bore our sins" in his body on the cross, so that we might die to sins and live for righteousness; "by his wounds you have been healed."
+<cr>2 Timothy 4:7</c> - I have fought the good fight, I have finished the race, I have kept the faith.
+<cr>Psalm 103:1</c> - Praise the Lord, my soul; all my inmost being, praise his holy name.
+<cr>1 John 1:9</c> - If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness.
+<cr>Psalm 37:5</c> - Commit your way to the Lord; trust in him and he will do this.
+<cr>Hebrews 13:16</c> - And do not forget to do good and to share with others, for with such sacrifices God is pleased.
+<cr>Matthew 6:14</c> - For if you forgive other people when they sin against you, your heavenly Father will also forgive you.
+<cr>Romans 5:1</c> - Therefore, since we have been justified through faith, we have peace with God through our Lord Jesus Christ.
+<cr>John 14:27</c> - Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.
+<cr>Proverbs 21:21</c> - Whoever pursues righteousness and love finds life, prosperity and honor.
+<cr>Romans 8:38-39</c> - For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.
+<cr>1 Timothy 6:12</c> - Fight the good fight of the faith. Take hold of the eternal life to which you were called when you made your good confession in the presence of many witnesses.
+<cr>Isaiah 25:1</c> - Lord, you are my God; I will exalt you and praise your name, for in perfect faithfulness you have done wonderful things, things planned long ago.
+<cr>Psalm 150:2</c> - Praise him for his acts of power; praise him for his surpassing greatness.
+<cr>John 12:46</c> - I have come into the world as a light, so that no one who believes in me should stay in darkness.
+<cr>Romans 8:31</c> - What, then, shall we say in response to these things? If God is for us, who can be against us?
+<cr>Psalm 84:10</c> - Better is one day in your courts than a thousand elsewhere; I would rather be a doorkeeper in the house of my God than dwell in the tents of the wicked.
+<cr>Matthew 25:21</c> - His master replied, ‘Well done, good and faithful servant! You have been faithful with a few things; I will put you in charge of many things. Come and share your master’s happiness!’
+<cr>Psalm 27:14</c> - Wait for the Lord; be strong and take heart and wait for the Lord.
+<cr>2 Chronicles 7:14</c> - If my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven, and I will forgive their sin and will heal their land.
+<cr>John 3:17</c> - For God did not send his Son into the world to condemn the world, but to save the world through him.
+<cr>Romans 12:10</c> - Be devoted to one another in love. Honor one another above yourselves.
+<cr>Psalm 18:2</c> - The Lord is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge, my shield and the horn of my salvation, my stronghold.
+<cr>Matthew 5:44</c> - But I tell you, love your enemies and pray for those who persecute you.
+<cr>Isaiah 41:13</c> - For I am the Lord your God who takes hold of your right hand and says to you, Do not fear; I will help you.
+<cr>Hebrews 11:6</c> - And without faith it is impossible to please God, because anyone who comes to him must believe that he exists and that he rewards those who earnestly seek him.
+<cr>Psalm 25:4</c> - Show me your ways, Lord, teach me your paths.
+<cr>Philippians 4:19</c> - And my God will meet all your needs according to the riches of his glory in Christ Jesus.
+<cr>Matthew 10:32</c> - Whoever acknowledges me before others, I will also acknowledge before my Father in heaven.
+<cr>Psalm 27:5</c> - For in the day of trouble he will keep me safe in his dwelling; he will hide me in the shelter of his sacred tent and set me high upon a rock.
+<cr>Romans 13:10</c> - Love does no harm to a neighbor. Therefore love is the fulfillment of the law.
+<cr>Psalm 33:4</c> - For the word of the Lord is right and true; he is faithful in all he does.
+<cr>Proverbs 17:17</c> - A friend loves at all times, and a brother is born for a time of adversity.
+<cr>Isaiah 58:11</c> - The Lord will guide you always; he will satisfy your needs in a sun-scorched land and will strengthen your frame. You will be like a well-watered garden, like a spring whose waters never fail.
+<cr>Psalm 16:11</c> - You make known to me the path of life; you will fill me with joy in your presence, with eternal pleasures at your right hand.
+<cr>Matthew 19:14</c> - Jesus said, "Let the little children come to me, and do not hinder them, for the kingdom of heaven belongs to such as these."
+<cr>1 Corinthians 2:9</c> - However, as it is written: "What no eye has seen, what no ear has heard, and what no human mind has conceived"—the things God has prepared for those who love him.
+<cr>Hebrews 12:1</c> - Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us.
+<cr>Romans 8:18</c> - I consider that our present sufferings are not worth comparing with the glory that will be revealed in us.
+<cr>Psalm 1:1-2</c> - Blessed is the one who does not walk in step with the wicked or stand in the way that sinners take or sit in the company of mockers, but whose delight is in the law of the Lord, and who meditates on his law day and night.
+<cr>1 Timothy 4:12</c> - Don’t let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith and in purity.
+<cr>Joshua 1:9</c> - Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.
+<cr>Psalm 119:105</c> - Your word is a lamp for my feet, a light on my path.
+<cr>Matthew 6:33</c> - But seek first his kingdom and his righteousness, and all these things will be given to you as well.
+<cr>Hebrews 12:2</c> - Fixing our eyes on Jesus, the pioneer and perfecter of faith. For the joy set before him he endured the cross, scorning its shame, and sat down at the right hand of the throne of God.
+<cr>Psalm 46:10</c> - He says, "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth."
+<cr>Colossians 3:12</c> - Therefore, as God’s chosen people, holy and dearly loved, clothe yourselves with compassion, kindness, humility, gentleness and patience.
+<cr>Isaiah 55:9</c> - "As the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts.
+<cr>Romans 12:9</c> - Love must be sincere. Hate what is evil; cling to what is good.
+<cr>Psalm 31:24</c> - Be strong and take heart, all you who hope in the Lord.
+<cr>Matthew 16:24</c> - Then Jesus said to his disciples, "Whoever wants to be my disciple must deny themselves and take up their cross and follow me."
+<cr>Hebrews 13:8</c> - Jesus Christ is the same yesterday and today and forever.
+<cr>Psalm 27:1</c> - The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?
+<cr>Proverbs 3:5</c> - Trust in the Lord with all your heart and lean not on your own understanding.
+<cr>John 14:6</c> - Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me."
+<cr>Romans 8:28</c> - And we know that in all things God works for the good of those who love him, who have been called according to his purpose.
+<cr>Philippians 4:6</c> - Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.
+<cr>Psalm 119:165</c> - Great peace have those who love your law, and nothing can make them stumble.
+<cr>Matthew 5:16</c> - In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven.
+<cr>Joshua 24:15</c> - But if serving the Lord seems undesirable to you, then choose for yourselves this day whom you will serve, whether the gods your ancestors served beyond the Euphrates, or the gods of the Amorites, in whose land you are living. But as for me and my household, we will serve the Lord.
+<cr>1 John 4:16</c> - And so we know and rely on the love God has for us. God is love. Whoever lives in love lives in God, and God in them.
+<cr>Philippians 4:13</c> - I can do all this through him who gives me strength.
+<cr>Psalm 23:1</c> - The Lord is my shepherd, I lack nothing.
+<cr>Genesis 1:1</c> - In the beginning God created the heavens and the earth.
+<cr>Mark 16:15</c> - He said to them, "Go into all the world and preach the gospel to all creation."
+<cr>2 Corinthians 5:7</c> - For we live by faith, not by sight.
+<cr>Matthew 11:28</c> - Come to me, all you who are weary and burdened, and I will give you rest.
+<cr>Psalm 37:4</c> - Take delight in the Lord, and he will give you the desires of your heart.
+<cr>Philippians 4:8</c> - Finally, brothers and sisters, whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think about such things.
+<cr>James 1:2</c> - Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds.
+<cr>Psalm 19:8</c> - The precepts of the Lord are right, giving joy to the heart. The commands of the Lord are radiant, giving light to the eyes.
+<cr>Galatians 2:20</c> - I have been crucified with Christ and I no longer live, but Christ lives in me. The life I now live in the body, I live by faith in the Son of God, who loved me and gave himself for me.
+<cr>Psalm 34:8</c> - Taste and see that the Lord is good; blessed is the one who takes refuge in him.
+<cr>2 Corinthians 4:16</c> - Therefore we do not lose heart. Though outwardly we are wasting away, yet inwardly we are being renewed day by day.
+<cr>Psalm 139:23-24</c> - Search me, God, and know my heart; test me and know my anxious thoughts. See if there is any offensive way in me, and lead me in the way everlasting.
+<cr>John 16:33</c> - I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world.
+<cr>Psalm 37:23-24</c> - The Lord makes firm the steps of the one who delights in him; though he may stumble, he will not fall, for the Lord upholds him with his hand.
+<cr>James 1:12</c> - Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has
+<cr>Genesis 1:1</c> - In the beginning God created the heavens and the earth.
+<cr>John 3:16</c> - For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.
+<cr>Romans 8:28</c> - And we know that in all things God works for the good of those who love him, who have been called according to his purpose.
+<cr>Psalm 23:1</c> - The Lord is my shepherd, I lack nothing.
+<cr>Philippians 4:13</c> - I can do all this through him who gives me strength.
+<cr>Matthew 6:33</c> - But seek first his kingdom and his righteousness, and all these things will be given to you as well.
+<cr>Isaiah 41:10</c> - So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.
+<cr>Jeremiah 29:11</c> - For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.
+<cr>Proverbs 3:5</c> - Trust in the Lord with all your heart and lean not on your own understanding.
+<cr>Hebrews 11:1</c> - Now faith is confidence in what we hope for and assurance about what we do not see.
+<cr>2 Corinthians 5:17</c> - Therefore, if anyone is in Christ, the new creation has come: The old has gone, the new is here!
+<cr>Psalm 46:10</c> - He says, "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth."
+<cr>James 1:5</c> - If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.
+<cr>1 Peter 5:7</c> - Cast all your anxiety on him because he cares for you.
+<cr>Matthew 11:28</c> - Come to me, all you who are weary and burdened, and I will give you rest.
+<cr>Psalm 119:105</c> - Your word is a lamp for my feet, a light on my path.
+<cr>Isaiah 40:31</c> - But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.
+<cr>Romans 12:2</c> - Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God’s will is—his good, pleasing and perfect will.
+<cr>Matthew 28:19</c> - Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.
+<cr>Joshua 1:9</c> - Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.
+<cr>Philippians 4:6</c> - Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.
+<cr>Galatians 5:22-23</c> - But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law.
+<cr>John 14:6</c> - Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me."
+<cr>Romans 10:9</c> - If you declare with your mouth, "Jesus is Lord," and believe in your heart that God raised him from the dead, you will be saved.
+<cr>Ephesians 2:8-9</c> - For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—not by works, so that no one can boast.
+<cr>1 Corinthians 13:4-5</c> - Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs.
+<cr>2 Timothy 1:7</c> - For the Spirit God gave us does not make us timid, but gives us power, love and self-discipline.
+<cr>Isaiah 26:3</c> - You will keep in perfect peace those whose minds are steadfast, because they trust in you.
+<cr>Psalm 27:1</c> - The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?
+<cr>Colossians 3:23</c> - Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.
+<cr>1 John 4:18</c> - There is no fear in love. But perfect love drives out fear, because fear has to do with punishment. The one who fears is not made perfect in love.
+<cr>Matthew 5:16</c> - In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven.
+<cr>1 Corinthians 10:13</c> - No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out so that you can endure it.
+<cr>2 Corinthians 12:9</c> - But he said to me, "My grace is sufficient for you, for my power is made perfect in weakness." Therefore I will boast all the more gladly about my weaknesses, so that Christ’s power may rest on me.
+<cr>James 1:12</c> - Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him.
+<cr>John 1:1</c> - In the beginning was the Word, and the Word was with God, and the Word was God.
+<cr>Psalm 34:8</c> - Taste and see that the Lord is good; blessed is the one who takes refuge in him.
+<cr>Proverbs 18:10</c> - The name of the Lord is a fortified tower; the righteous run to it and are safe.
+<cr>1 Peter 3:15</c> - But in your hearts revere Christ as Lord. Always be prepared to give an answer to everyone who asks you to give the reason for the hope that you have. But do this with gentleness and respect.
+<cr>Hebrews 12:2</c> - Fixing our eyes on Jesus, the pioneer and perfecter of faith. For the joy set before him he endured the cross, scorning its shame, and sat down at the right hand of the throne of God.
+<cr>Proverbs 16:3</c> - Commit to the Lord whatever you do, and he will establish your plans.
+<cr>Matthew 22:37-39</c> - Jesus replied: "‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ This is the first and greatest commandment. And the second is like it: ‘Love your neighbor as yourself.’"
+<cr>Psalm 55:22</c> - Cast your cares on the Lord and he will sustain you; he will never let the righteous be shaken.
+<cr>Romans 5:8</c> - But God demonstrates his own love for us in this: While we were still sinners, Christ died for us.
+<cr>John 16:33</c> - I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world.
+<cr>Hebrews 13:8</c> - Jesus Christ is the same yesterday and today and forever.
+<cr>2 Corinthians 5:7</c> - For we live by faith, not by sight.
+<cr>Psalm 37:4</c> - Take delight in the Lord, and he will give you the desires of your heart.
+<cr>Isaiah 53:5</c> - But he was pierced for our transgressions, he was crushed for our iniquities; the punishment that brought us peace was on him, and by his wounds we are healed.
+<cr>James 4:7</c> - Submit yourselves, then, to God. Resist the devil, and he will flee from you.
+<cr>Romans 6:23</c> - For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.
+<cr>Psalm 118:24</c> - The Lord has done it this very day; let us rejoice today and be glad.
+<cr>Proverbs 3:6</c> - In all your ways submit to him, and he will make your paths straight.
+<cr>Isaiah 40:29</c> - He gives strength to the weary and increases the power of the weak.
+<cr>1 Corinthians 16:13</c> - Be on your guard; stand firm in the faith; be courageous; be strong.
+<cr>James 1:17</c> - Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows.
+<cr>Matthew 7:7</c> - Ask and it will be given to you; seek and you will find; knock and the door will be opened to you.
+<cr>Isaiah 12:2</c> - Surely God is my salvation; I will trust and not be afraid. The Lord, the Lord himself, is my strength and my defense; he has become my salvation.
+<cr>Luke 6:38</c> - Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you.
+<cr>Jeremiah 33:3</c> - Call to me and I will answer you and tell you great and unsearchable things you do not know.
+<cr>John 15:5</c> - I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing.
+<cr>Romans 15:13</c> - May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit.
+<cr>Psalm 62:8</c> - Trust in him at all times, you people; pour out your hearts to him, for God is our refuge.
+<cr>1 Thessalonians 5:16-18</c> - Rejoice always, pray continually, give thanks in all circumstances; for this is God’s will for you in Christ Jesus.
+<cr>Hebrews 10:23</c> - Let us hold unswervingly to the hope we profess, for he who promised is faithful.
+<cr>Psalm 56:3</c> - When I am afraid, I put my trust in you.
+<cr>Isaiah 43:2</c> - When you pass through the waters, I will be with you; and when you pass through the rivers, they will not sweep over you. When you walk through the fire, you will not be burned; the flames will not set you ablaze.
+<cr>Romans 8:1</c> - Therefore, there is now no condemnation for those who are in Christ Jesus.
+<cr>John 13:35</c> - By this everyone will know that you are my disciples, if you love one another.
+<cr>Psalm 91:1</c> - Whoever dwells in the shelter of the Most High will rest in the shadow of the Almighty.
+<cr>Psalm 119:11</c> - I have hidden your word in my heart that I might not sin against you.
+<cr>Proverbs 29:25</c> - Fear of man will prove to be a snare, but whoever trusts in the Lord is kept safe.
+<cr>Isaiah 55:6</c> - Seek the Lord while he may be found; call on him while he is near.
+<cr>Matthew 6:9-13</c> - This, then, is how you should pray: "Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as it is in heaven. Give us today our daily bread. And forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from the evil one."
+<cr>2 Corinthians 9:6</c> - Remember this: Whoever sows sparingly will also reap sparingly, and whoever sows generously will also reap generously.
+<cr>Romans 12:12</c> - Be joyful in hope, patient in affliction, faithful in prayer.
+<cr>1 Peter 1:3</c> - Praise be to the God and Father of our Lord Jesus Christ! In his great mercy he has given us new birth into a living hope through the resurrection of Jesus Christ from the dead.
+<cr>Philippians 2:3</c> - Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves.
+<cr>Psalm 119:2</c> - Blessed are those who keep his statutes and seek him with all their heart.
+<cr>2 Timothy 3:16-17</c> - All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.
+<cr>Matthew 19:26</c> - Jesus looked at them and said, "With man this is impossible, but with God all things are possible."
+<cr>Isaiah 40:8</c> - The grass withers and the flowers fall, but the word of our God endures forever.
+<cr>Psalm 100:4</c> - Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise his name.
+<cr>Hebrews 4:12</c> - For the word of God is alive and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes of the heart.
+<cr>1 Corinthians 15:58</c> - Therefore, my dear brothers and sisters, stand firm. Let nothing move you. Always give yourselves fully to the work of the Lord, because you know that your labor in the Lord is not in vain.
+<cr>Psalm 145:18</c> - The Lord is near to all who call on him, to all who call on him in truth.
+<cr>Proverbs 4:23</c> - Above all else, guard your heart, for everything you do flows from it.
+<cr>Isaiah 6:8</c> - Then I heard the voice of the Lord saying, "Whom shall I send? And who will go for us?" And I said, "Here am I. Send me!"
+<cr>Matthew 18:20</c> - For where two or three gather in my name, there am I with them.
+<cr>Romans 3:23</c> - For all have sinned and fall short of the glory of God.
+<cr>John 15:13</c> - Greater love has no one than this: to lay down one’s life for one’s friends.
+<cr>Psalm 139:14</c> - I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well.
+<cr>Philippians 1:6</c> - Being confident of this, that he who began a good work in you will carry it on to completion until the day of Christ Jesus.
+<cr>1 Thessalonians 5:11</c> - Therefore encourage one another and build each other up, just as in fact you are doing.
+<cr>Isaiah 54:17</c> - No weapon forged against you will prevail, and you will refute every tongue that accuses you. This is the heritage of the servants of the Lord, and this is their vindication from me, declares the Lord.
+<cr>Psalm 9:1</c> - I will give thanks to you, Lord, with all my heart; I will tell of all your wonderful deeds.
+<cr>Luke 12:22</c> - Then Jesus said to his disciples: "Therefore I tell you, do not worry about your life, what you will eat; or about your body, what you will wear."
+<cr>Romans 12:21</c> - Do not be overcome by evil, but overcome evil with good.
+<cr>John 11:25</c> - Jesus said to her, "I am the resurrection and the life. The one who believes in me will live, even though they die."
+<cr>Psalm 150:6</c> - Let everything that has breath praise the Lord. Praise the Lord.
+<cr>Galatians 6:9</c> - Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up.
+<cr>1 John 3:16</c> - This is how we know what love is: Jesus Christ laid down his life for us. And we ought to lay down our lives for our brothers and sisters.
+<cr>Psalm 16:8</c> - I keep my eyes always on the Lord. With him at my right hand, I will not be shaken.
+<cr>Isaiah 55:11</c> - So is my word that goes out from my mouth: It will not return to me empty, but will accomplish what I desire and achieve the purpose for which I sent it.
+<cr>1 Peter 4:10</c> - Each of you should use whatever gift you have received to serve others, as faithful stewards of God’s grace in its various forms.
+<cr>Psalm 19:14</c> - May these words of my mouth and this meditation of my heart be pleasing in your sight, Lord, my Rock and my Redeemer.
+<cr>John 8:12</c> - When Jesus spoke again to the people, he said, "I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life."
+<cr>Proverbs 22:6</c> - Start children off on the way they should go, and even when they are old they will not turn from it.
+<cr>Hebrews 13:5</c> - Keep your lives free from the love of money and be content with what you have, because God has said, "Never will I leave you; never will I forsake you."
+<cr>Psalm 46:1</c> - God is our refuge and strength, an ever-present help in trouble.
+<cr>James 5:16</c> - Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous person is powerful and effective.
+<cr>Psalm 19:1</c> - The heavens declare the glory of God; the skies proclaim the work of his hands.
+<cr>Matthew 5:9</c> - Blessed are the peacemakers, for they will be called children of God.
+<cr>Romans 14:8</c> - If we live, we live for the Lord; and if we die, we die for the Lord. So, whether we live or die, we belong to the Lord.
+<cr>John 6:35</c> - Then Jesus declared, "I am the bread of life. Whoever comes to me will never go hungry, and whoever believes in me will never be thirsty."
+<cr>Psalm 150:1</c> - Praise the Lord. Praise God in his sanctuary; praise him in his mighty heavens.
+<cr>1 Peter 2:24</c> - He himself bore our sins" in his body on the cross, so that we might die to sins and live for righteousness; "by his wounds you have been healed."
+<cr>2 Timothy 4:7</c> - I have fought the good fight, I have finished the race, I have kept the faith.
+<cr>Psalm 103:1</c> - Praise the Lord, my soul; all my inmost being, praise his holy name.
+<cr>1 John 1:9</c> - If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness.
+<cr>Psalm 37:5</c> - Commit your way to the Lord; trust in him and he will do this.
+<cr>Hebrews 13:16</c> - And do not forget to do good and to share with others, for with such sacrifices God is pleased.
+<cr>Matthew 6:14</c> - For if you forgive other people when they sin against you, your heavenly Father will also forgive you.
+<cr>Romans 5:1</c> - Therefore, since we have been justified through faith, we have peace with God through our Lord Jesus Christ.
+<cr>John 14:27</c> - Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.
+<cr>Proverbs 21:21</c> - Whoever pursues righteousness and love finds life, prosperity and honor.
+<cr>Romans 8:38-39</c> - For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.
+<cr>1 Timothy 6:12</c> - Fight the good fight of the faith. Take hold of the eternal life to which you were called when you made your good confession in the presence of many witnesses.
+<cr>Isaiah 25:1</c> - Lord, you are my God; I will exalt you and praise your name, for in perfect faithfulness you have done wonderful things, things planned long ago.
+<cr>Psalm 150:2</c> - Praise him for his acts of power; praise him for his surpassing greatness.
+<cr>John 12:46</c> - I have come into the world as a light, so that no one who believes in me should stay in darkness.
+<cr>Romans 8:31</c> - What, then, shall we say in response to these things? If God is for us, who can be against us?
+<cr>Psalm 84:10</c> - Better is one day in your courts than a thousand elsewhere; I would rather be a doorkeeper in the house of my God than dwell in the tents of the wicked.
+<cr>Matthew 25:21</c> - His master replied, ‘Well done, good and faithful servant! You have been faithful with a few things; I will put you in charge of many things. Come and share your master’s happiness!’
+<cr>Psalm 27:14</c> - Wait for the Lord; be strong and take heart and wait for the Lord.
+<cr>2 Chronicles 7:14</c> - If my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven, and I will forgive their sin and will heal their land.
+<cr>John 3:17</c> - For God did not send his Son into the world to condemn the world, but to save the world through him.
+<cr>Romans 12:10</c> - Be devoted to one another in love. Honor one another above yourselves.
+<cr>Psalm 18:2</c> - The Lord is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge, my shield and the horn of my salvation, my stronghold.
+<cr>Matthew 5:44</c> - But I tell you, love your enemies and pray for those who persecute you.
+<cr>Isaiah 41:13</c> - For I am the Lord your God who takes hold of your right hand and says to you, Do not fear; I will help you.
+<cr>Hebrews 11:6</c> - And without faith it is impossible to please God, because anyone who comes to him must believe that he exists and that he rewards those who earnestly seek him.
+<cr>Psalm 25:4</c> - Show me your ways, Lord, teach me your paths.
+<cr>Philippians 4:19</c> - And my God will meet all your needs according to the riches of his glory in Christ Jesus.
+<cr>Matthew 10:32</c> - Whoever acknowledges me before others, I will also acknowledge before my Father in heaven.
+<cr>Psalm 27:5</c> - For in the day of trouble he will keep me safe in his dwelling; he will hide me in the shelter of his sacred tent and set me high upon a rock.
+<cr>Romans 13:10</c> - Love does no harm to a neighbor. Therefore love is the fulfillment of the law.
+<cr>Psalm 33:4</c> - For the word of the Lord is right and true; he is faithful in all he does.
+<cr>Proverbs 17:17</c> - A friend loves at all times, and a brother is born for a time of adversity.
+<cr>Isaiah 58:11</c> - The Lord will guide you always; he will satisfy your needs in a sun-scorched land and will strengthen your frame. You will be like a well-watered garden, like a spring whose waters never fail.
+<cr>Psalm 16:11</c> - You make known to me the path of life; you will fill me with joy in your presence, with eternal pleasures at your right hand.
+<cr>Matthew 19:14</c> - Jesus said, "Let the little children come to me, and do not hinder them, for the kingdom of heaven belongs to such as these."
+<cr>1 Corinthians 2:9</c> - However, as it is written: "What no eye has seen, what no ear has heard, and what no human mind has conceived"—the things God has prepared for those who love him.
+<cr>Hebrews 12:1</c> - Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us.
+<cr>Romans 8:18</c> - I consider that our present sufferings are not worth comparing with the glory that will be revealed in us.
+<cr>Psalm 1:1-2</c> - Blessed is the one who does not walk in step with the wicked or stand in the way that sinners take or sit in the company of mockers, but whose delight is in the law of the Lord, and who meditates on his law day and night.
+<cr>1 Timothy 4:12</c> - Don’t let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith and in purity.
+<cr>Joshua 1:9</c> - Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.
+<cr>Psalm 119:105</c> - Your word is a lamp for my feet, a light on my path.
+<cr>Matthew 6:33</c> - But seek first his kingdom and his righteousness, and all these things will be given to you as well.
+<cr>Hebrews 12:2</c> - Fixing our eyes on Jesus, the pioneer and perfecter of faith. For the joy set before him he endured the cross, scorning its shame, and sat down at the right hand of the throne of God.
+<cr>Psalm 46:10</c> - He says, "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth."
+<cr>Colossians 3:12</c> - Therefore, as God’s chosen people, holy and dearly loved, clothe yourselves with compassion, kindness, humility, gentleness and patience.
+<cr>Isaiah 55:9</c> - "As the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts.
+<cr>Romans 12:9</c> - Love must be sincere. Hate what is evil; cling to what is good.
+<cr>Psalm 31:24</c> - Be strong and take heart, all you who hope in the Lord.
+<cr>Matthew 16:24</c> - Then Jesus said to his disciples, "Whoever wants to be my disciple must deny themselves and take up their cross and follow me."
+<cr>Hebrews 13:8</c> - Jesus Christ is the same yesterday and today and forever.
+<cr>Psalm 27:1</c> - The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?
+<cr>Proverbs 3:5</c> - Trust in the Lord with all your heart and lean not on your own understanding.
+<cr>John 14:6</c> - Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me."
