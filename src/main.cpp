@@ -240,8 +240,20 @@ class $modify(CustomMenuLayer, MenuLayer) {
     bool init() override {
         if (!MenuLayer::init()) return false;
 
-        // Create the FLAlertLayer with "AMEN" and "PRAY" options
-        auto alert = FLAlertLayer::create(
+
+        auto VOTD_Popup = createQuickPopup(
+        "Title",          
+        "Say hi to mom?",  
+        "Nah", "Yeah",     
+        [](auto, bool btn2) {
+            if (btn2) {
+                // say hi to mom
+            }
+        }
+        );
+
+
+        auto alert34 = FLAlertLayer::create(
             this,  // Set this layer as the delegate to handle button callbacks
             "Verse Of The Day",
             "<cr>John 3:16</c> - For God so loved the world that he gave his one and only Son, "
