@@ -6,15 +6,12 @@
 #include <cocos2d.h>
 
 #include <Geode/Enums.hpp>
-
 #include <Geode/modify/MenuLayer.hpp>
 #include <Geode/modify/CreatorLayer.hpp>
-
 #include <Geode/modify/CCLayer.hpp>
 #include <Geode/modify/CCScene.hpp>
-
 #include <Geode/binding/FLAlertLayer.hpp>
-
+#include <Geode/ui/Popup.hpp>
 #include <Geode/ui/MDTextArea.hpp>
 #include <Geode/binding/TextArea.hpp>
 #include <Geode/ui/BasedButtonSprite.hpp>
@@ -22,6 +19,7 @@
 
 using namespace geode::prelude;
 using namespace cocos2d;
+
 
 
 class ChristianModLayer : public CCLayer {
@@ -88,10 +86,6 @@ public:
             this,
             menu_selector(ChristianModLayer::onHowAreYouFeelingTodayButton)
         );
-/* -------------------------------------------------------------------------- */
-/*                                 HAYFT_POPUP                                */
-/* -------------------------------------------------------------------------- */
-
 /* -------------------------------------------------------------------------- */
 /*                                 PrayButton                                 */
 /* -------------------------------------------------------------------------- */
@@ -184,11 +178,7 @@ public:
 
     void onHowAreYouFeelingTodayButton(CCObject* sender) 
     {
-        std::cout<<"thing";
-
     }
-
-
 
     void onClose(CCObject* sender) {
         CCDirector::sharedDirector()->popScene();
