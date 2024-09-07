@@ -91,8 +91,7 @@ public:
 /* -------------------------------------------------------------------------- */
 /*                                 HAYFT_POPUP                                */
 /* -------------------------------------------------------------------------- */
-        auto HAYFT_POPUP = cocos2d::extension::CCScale9Sprite::create("square02b_001.png", { .0f, .0f, 80.0f, 80.0f });
-        HAYFT_POPUP->setContentSize({ 153.f, 95.f });
+
 /* -------------------------------------------------------------------------- */
 /*                                 PrayButton                                 */
 /* -------------------------------------------------------------------------- */
@@ -146,7 +145,6 @@ public:
         this->addChild(subttl);
         this->addChild(VOTD_ttl);
         this->addChild(VOTD_TextArea);
-        this->addChild(HAYFT_POPUP);
 
 /* -------------------------------------------------------------------------- */
 /*                             Add menus to layer                             */
@@ -167,7 +165,6 @@ public:
         VOTD_TextArea->setID("cmod-votd-textarea");
         prayButtonMenu->setID("cmod-pray-button-menu");
         prayButton->setID("cmod-pray-button");
-        HAYFT_POPUP->setID("cmod-hayft-popup");
 
 
 
@@ -235,25 +232,19 @@ public:
     }
 };
 
-// Modify the MenuLayer to add the FLAlertLayer instead of a button
+// Modify the MenuLayer to add the FLAlertLayer with the Verse of the Day popup
 class $modify(CustomMenuLayer, MenuLayer) {
+public:
+    // Use the Fields struct to add custom fields
+    struct Fields {
+        FLAlertLayer* VOTD_Popup = nullptr;
+    };
+
     bool init() override {
         if (!MenuLayer::init()) return false;
 
-
-        auto VOTD_Popup = createQuickPopup(
-        "Title",          
-        "Say hi to mom?",  
-        "Nah", "Yeah",     
-        [](auto, bool btn2) {
-            if (btn2) {
-                // say hi to mom
-            }
-        }
-        );
-
-
-        auto alert34 = FLAlertLayer::create(
+        // Create the Verse of the Day alert and store the reference in m_fields
+        m_fields->VOTD_Popup = FLAlertLayer::create(
             this,  // Set this layer as the delegate to handle button callbacks
             "Verse Of The Day",
             "<cr>John 3:16</c> - For God so loved the world that he gave his one and only Son, "
@@ -261,18 +252,26 @@ class $modify(CustomMenuLayer, MenuLayer) {
             "AMEN",
             "PRAY"
         );
-        alert->m_scene = this;
-        alert->show();
+        m_fields->VOTD_Popup->m_scene = this;
+        m_fields->VOTD_Popup->show();
 
         return true;
     }
 
     // Overriding the delegate method that is called when a button is clicked in FLAlertLayer
     void FLAlert_Clicked(FLAlertLayer* alert, bool btn2) override {
-        if (btn2) {  // If the "PRAY" button (right button) was clicked
-            // Create and push the custom scene onto the stack
-            auto scene = ChristianModScene::create();
-            CCDirector::sharedDirector()->pushScene(scene);
+        // Check if the clicked alert is the Verse of the Day alert
+        if (alert == m_fields->VOTD_Popup) {
+            if (btn2) {  // If the "PRAY" button (right button) was clicked
+                // Create and push the custom scene onto the stack
+                auto scene = ChristianModScene::create();
+                CCDirector::sharedDirector()->pushScene(scene);
+            }
+        } 
+        // Handle other alerts (like quit game) as needed (or just do nothing)
+        else {
+            // Handle the default behavior for other alerts
+            MenuLayer::FLAlert_Clicked(alert, btn2);
         }
     }
 };
@@ -286,7 +285,6 @@ class $modify(CustomCreatorLayer, CreatorLayer)
         if (!CreatorLayer::init()) return false;
         
         auto BibleIcon = CCSprite::create("BibleIcon.png"_spr);
-
 
         auto bottomLeftMenu = this->getChildByID("bottom-left-menu");
         auto spr = CircleButtonSprite::createWithSprite("BibleIcon.png"_spr, 1.0f, CircleBaseColor::Green, CircleBaseSize::Small);
