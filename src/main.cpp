@@ -29,7 +29,8 @@ protected:
 
 
         auto title = CCLabelBMFont::create("How are you feeling today?", "bigFont.fnt");
-        title->setPosition({200.f, 200.f});
+        title->setPosition({290.f, 264.f});
+        title->setScale(0.675);
         this->addChild(title);
 
         m_closeBtn->setScale(1.2f);
