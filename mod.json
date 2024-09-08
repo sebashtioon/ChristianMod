@@ -13,7 +13,9 @@
 	"description": "Bringing God's Word to Geometry Dash.",
 	"resources": {
 		"sprites": [
-			"resources/sprites/*.png"
+			"resources/sprites/*.png",
+			"resources/sprites/faces/with text/*.png",
+			"resources/sprites/faces/without text/*.png"
 		]
 	}
 }

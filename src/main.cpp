@@ -43,7 +43,7 @@ protected:
 
 
 
-        auto happyBtnSprite = CCSprite::create("");
+        auto happyBtnSprite = CCSprite::create("happy-complete");
         auto happyBtn = CCMenuItemSpriteExtra::create(
             happyBtnSprite, 
             this, 
@@ -51,7 +51,7 @@ protected:
             );
 
 
-        auto calmBtnSprite = CCSprite::create("");
+        auto calmBtnSprite = CCSprite::create("calm-complete");
         auto calmBtn = CCMenuItemSpriteExtra::create(
             calmBtnSprite, 
             this, 
