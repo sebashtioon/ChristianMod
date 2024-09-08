@@ -363,3 +363,4 @@
 <cr>Psalm 27:1</c> - The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?
 <cr>Proverbs 3:5</c> - Trust in the Lord with all your heart and lean not on your own understanding.
 <cr>John 14:6</c> - Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me."
+<cr>John 15:13</c> - Greater love has no one than this: to lay down one’s life for one’s friends.
