@@ -21,6 +21,39 @@ using namespace geode::prelude;
 using namespace cocos2d;
 
 
+// specify parameters for the setup function in the Popup<...> template
+class HAYFT_Popup : public geode::Popup<std::string const&> {
+protected:
+    bool setup(std::string const& value) override {
+        auto winSize = CCDirector::sharedDirector()->getWinSize();
+
+        // convenience function provided by Popup
+        // for adding/setting a title to the popup
+        this->setTitle("Hi mom!");
+
+        auto label = CCLabelBMFont::create(value.c_str(), "bigFont.fnt");
+        label->setPosition(winSize / 2);
+        this->addChild(label);
+
+        return true;
+    }
+
+public:
+    static HAYFT_Popup* create(std::string const& text) {
+        auto ret = new HAYFT_Popup();
+        if (ret->init(240.f, 160.f, text)) {
+            ret->autorelease();
+            return ret;
+        }
+
+        delete ret;
+        return nullptr;
+    }
+};
+
+
+
+
 
 class ChristianModLayer : public CCLayer {
 public:
@@ -178,6 +211,8 @@ public:
 
     void onHowAreYouFeelingTodayButton(CCObject* sender) 
     {
+        auto HowAreYouFeelingTodayPopup = HAYFT_Popup::create("sigma");
+        this->addChild(HowAreYouFeelingTodayPopup);
     }
 
     void onClose(CCObject* sender) {
@@ -197,6 +232,8 @@ public:
     }
 };
 
+
+
 // Custom Scene Class
 class ChristianModScene : public CCScene {
 public:
@@ -206,6 +243,8 @@ public:
         // Add the custom layer to the scene
         auto layer = ChristianModLayer::create();
         this->addChild(layer);
+        layer->setID("cmod-main-layer");
+
 
         return true;
     }
