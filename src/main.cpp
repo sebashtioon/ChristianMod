@@ -33,6 +33,35 @@ protected:
         title->setScale(0.675);
         this->addChild(title);
 
+
+
+        auto feelingButtonsMenu = CCMenu::create();
+        feelingButtonsMenu->setPosition(winSize / 2);
+        this->addChild(feelingButtonsMenu);
+        feelingButtonsMenu->setID("feelings-buttons-menu");
+
+
+
+
+        auto happyBtnSprite = CCSprite::create("");
+        auto happyBtn = CCMenuItemSpriteExtra::create(
+            happyBtnSprite, 
+            this, 
+            menu_selector(HAYFT_Popup::onHappyBtn)
+            );
+
+
+        auto calmBtnSprite = CCSprite::create("");
+        auto calmBtn = CCMenuItemSpriteExtra::create(
+            calmBtnSprite, 
+            this, 
+            menu_selector(HAYFT_Popup::onCalmBtn)
+            );
+
+        feelingButtonsMenu->addChild(happyBtn);
+        feelingButtonsMenu->addChild(calmBtn);
+        
+        
         m_closeBtn->setScale(1.2f);
         m_closeBtn->setPosition({-182.f, 115.f});
         m_bgSprite->setScale(1.55f);
@@ -52,6 +81,14 @@ public:
         return nullptr;
     }
 
+    void onHappyBtn(CCObject* sender)
+    {
+
+    }
+    void onCalmBtn(CCObject* sender)
+    {
+
+    }
 
 };
 
