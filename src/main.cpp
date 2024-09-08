@@ -27,13 +27,14 @@ protected:
     bool setup(std::string const& value) override {
         auto winSize = CCDirector::sharedDirector()->getWinSize();
 
-        // convenience function provided by Popup
-        // for adding/setting a title to the popup
-        this->setTitle("Hi mom!");
 
-        auto label = CCLabelBMFont::create(value.c_str(), "bigFont.fnt");
-        label->setPosition(winSize / 2);
-        this->addChild(label);
+        auto title = CCLabelBMFont::create("How are you feeling today?", "bigFont.fnt");
+        title->setPosition({200.f, 200.f});
+        this->addChild(title);
+
+        m_closeBtn->setScale(1.2f);
+        m_closeBtn->setPosition({-182.f, 115.f});
+        m_bgSprite->setScale(1.55f);
 
         return true;
     }
@@ -49,6 +50,8 @@ public:
         delete ret;
         return nullptr;
     }
+
+
 };
 
 
