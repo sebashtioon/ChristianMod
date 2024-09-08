@@ -211,7 +211,8 @@ public:
 
     void onHowAreYouFeelingTodayButton(CCObject* sender) 
     {
-        auto HowAreYouFeelingTodayPopup = HAYFT_Popup::create("sigma");
+        auto HowAreYouFeelingTodayPopup = HAYFT_Popup::create("");
+        HowAreYouFeelingTodayPopup->setID("hayft-popup");
         this->addChild(HowAreYouFeelingTodayPopup);
     }
 
