@@ -1,6 +1,6 @@
 // TO GEODE DEVS CHECKING OUT MY CODE:
 // SORRY IT ONLY USES ONE FILE, IM TOO LAZY TO CREATE MORE
-// ALSO SORRY FOR THE BAD CODE. IM NEW!
+// ALSO SORRY FOR THE BAD CODE. IM NEW TO MODDING AND C++!
 
 #include <Geode/Geode.hpp>
 #include <cocos2d.h>
@@ -27,45 +27,56 @@ protected:
     bool setup(std::string const& value) override {
         auto winSize = CCDirector::sharedDirector()->getWinSize();
 
-
+/* ---------------------------------- Title --------------------------------- */
         auto title = CCLabelBMFont::create("How are you feeling today?", "bigFont.fnt");
         title->setPosition({290.f, 264.f});
         title->setScale(0.675);
         this->addChild(title);
 
 
+/* --------------------------- HAYFT Buttons menu --------------------------- */
+        auto hayftButtonsMenu = CCMenu::create();
+        hayftButtonsMenu->setPosition(winSize / 2);
+        this->addChild(hayftButtonsMenu);
+        hayftButtonsMenu->setID("cmod-hayft-buttons-menu");
+        hayftButtonsMenu->setZOrder(1);
 
-        auto feelingButtonsMenu = CCMenu::create();
-        feelingButtonsMenu->setPosition(winSize / 2);
-        this->addChild(feelingButtonsMenu);
-        feelingButtonsMenu->setID("feelings-buttons-menu");
+/* ------------------------------- Foreground ------------------------------- */
+        auto foreground = cocos2d::extension::CCScale9Sprite::create("square02b_001.png", { .0f, .0f, 80.0f, 80.0f });
+        foreground->setContentSize({ 153.f, 95.f });
+        foreground->setAnchorPoint({ .5f, 1.f });
+        foreground->setColor({ 123, 60, 31 });
+        foreground->setScale(2.05f);
+        foreground->setPosition({284.5f, 245.f});
 
-
-
-
-        auto happyBtnSprite = CCSprite::create("happy-complete");
+/* -------------------------------------------------------------------------- */
+/*                       Create HAYFT Buttons (feelings)                      */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- Happy --------------------------------- */
+        auto happyBtnSprite = CCSprite::create("happy-complete.png"_spr);
         auto happyBtn = CCMenuItemSpriteExtra::create(
             happyBtnSprite, 
             this, 
             menu_selector(HAYFT_Popup::onHappyBtn)
             );
-
-
-        auto calmBtnSprite = CCSprite::create("calm-complete");
+/* ---------------------------------- Calm ---------------------------------- */
+        auto calmBtnSprite = CCSprite::create("calm-complete.png"_spr);
+        calmBtnSprite->setScale(0.1f);
         auto calmBtn = CCMenuItemSpriteExtra::create(
             calmBtnSprite, 
             this, 
             menu_selector(HAYFT_Popup::onCalmBtn)
             );
 
-        feelingButtonsMenu->addChild(happyBtn);
-        feelingButtonsMenu->addChild(calmBtn);
-        
-        
-        m_closeBtn->setScale(1.2f);
+
+/* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
+        hayftButtonsMenu->addChild(calmBtn);
+/* ------------------------------ Popup config ------------------------------ */
         m_closeBtn->setPosition({-182.f, 115.f});
         m_bgSprite->setScale(1.55f);
-
+/* -------------------------- Add children to popup ------------------------- */
+        this->addChild(foreground);
+/* ---------------------------------- Other --------------------------------- */
         return true;
     }
 
