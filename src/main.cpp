@@ -48,7 +48,13 @@ protected:
         foreground->setColor({ 123, 60, 31 });
         foreground->setScale(2.05f);
         foreground->setPosition({284.5f, 245.f});
-
+/* ------------------------------- InfoButton ------------------------------- */
+        auto InfoButton = CCMenuItemSpriteExtra::create(
+            CCSprite::createWithSpriteFrameName("GJ_infoIcon_001.png"),
+            this,
+            menu_selector(HAYFT_Popup::onInfoBtn)
+        );
+        InfoButton->setPosition({453.f, 237.f});
 /* -------------------------------------------------------------------------- */
 /*                       Create HAYFT Buttons (feelings)                      */
 /* -------------------------------------------------------------------------- */
@@ -70,7 +76,11 @@ protected:
 
 
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
+        hayftButtonsMenu->addChild(InfoButton);
+
+
         hayftButtonsMenu->addChild(calmBtn);
+  
 /* ------------------------------ Popup config ------------------------------ */
         m_closeBtn->setPosition({-182.f, 115.f});
         m_bgSprite->setScale(1.55f);
@@ -91,6 +101,10 @@ public:
         delete ret;
         return nullptr;
     }
+    void onInfoBtn(CCObject* sender)
+    {
+
+    }
 
     void onHappyBtn(CCObject* sender)
     {
@@ -100,6 +114,7 @@ public:
     {
 
     }
+    
 
 };
 
