@@ -54,9 +54,7 @@ protected:
             this,
             menu_selector(HAYFT_Popup::onInfoBtn)
         );
-
-        // TODO: SET POSITION RELATIVE TO THE MENU (PARENT OF INFOBUTTON)
-
+        InfoButton->setPosition({179.f, 76.f});
 /* -------------------------------------------------------------------------- */
 /*                       Create HAYFT Buttons (feelings)                      */
 /* -------------------------------------------------------------------------- */
