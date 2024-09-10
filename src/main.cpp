@@ -101,7 +101,7 @@ public:
     {
         FLAlertLayer::create(
             "Info",    // title
-            "This module is meant to help you connect with <cr>God's word</c> through how you are feeling. Simply select an emotion based on how you are feeling, and you will get random <cr>Bible verse</c> given as God's word to you.",
+            "This module is meant to help you connect with <cr>God's word</c> through how you are feeling. Simply select an emotion based on how you are feeling, and you will get random <cr>Bible verse</c> given as <cr>God's word</c> to you.",
             "OK"
         )->show();
     }
