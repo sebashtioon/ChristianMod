@@ -59,6 +59,7 @@ protected:
 /* -------------------------------------------------------------------------- */
 /* ---------------------------------- Happy --------------------------------- */
         auto happyBtnSprite = CCSprite::create("happy-complete.png"_spr);
+        happyBtnSprite->setScale(0.1f);
         auto happyBtn = CCMenuItemSpriteExtra::create(
             happyBtnSprite, 
             this, 
@@ -79,7 +80,7 @@ protected:
         calmBtn->setPosition({-42.f, 47.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
-        
+
         hayftButtonsMenu->addChild(happyBtn);
         hayftButtonsMenu->addChild(calmBtn);
   
