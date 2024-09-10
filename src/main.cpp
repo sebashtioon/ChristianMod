@@ -49,12 +49,14 @@ protected:
         foreground->setScale(2.05f);
         foreground->setPosition({284.5f, 245.f});
 /* ------------------------------- InfoButton ------------------------------- */
-        auto InfoButton = CCMenuItemSpriteExtra::create(
-            CCSprite::createWithSpriteFrameName("GJ_infoIcon_001.png"),
+        auto HAYFT_PopupInfoButtonSpr = CCSprite::createWithSpriteFrameName("GJ_infoIcon_001.png");
+        HAYFT_PopupInfoButtonSpr->setScale(0.975);
+        auto HAYFT_PopupInfoButton = CCMenuItemSpriteExtra::create(
+            HAYFT_PopupInfoButtonSpr,
             this,
             menu_selector(HAYFT_Popup::onInfoBtn)
         );
-        InfoButton->setPosition({169.f, 76.f});
+        HAYFT_PopupInfoButton->setPosition({-182.f, 82.f});
 /* -------------------------------------------------------------------------- */
 /*                       Create HAYFT Buttons (feelings)                      */
 /* -------------------------------------------------------------------------- */
@@ -76,7 +78,7 @@ protected:
 
 
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
-        hayftButtonsMenu->addChild(InfoButton);
+        hayftButtonsMenu->addChild(HAYFT_PopupInfoButton);
 
 
         hayftButtonsMenu->addChild(calmBtn);
