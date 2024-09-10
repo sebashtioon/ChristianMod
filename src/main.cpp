@@ -35,13 +35,14 @@ protected:
         hayftButtonsMenu->setID("cmod-hayft-buttons-menu");
         hayftButtonsMenu->setZOrder(1);
 
-/* ------------------------------- Foreground ------------------------------- */
-        auto foreground = cocos2d::extension::CCScale9Sprite::create("square02b_001.png", { .0f, .0f, 80.0f, 80.0f });
-        foreground->setContentSize({ 153.f, 95.f });
-        foreground->setAnchorPoint({ .5f, 1.f });
-        foreground->setColor({ 123, 60, 31 });
-        foreground->setScale(2.05f);
-        foreground->setPosition({284.5f, 245.f});
+/* ----------------------------- hayftForeground ---------------------------- */
+        auto hayftForeground = cocos2d::extension::CCScale9Sprite::create("square02b_001.png", { .0f, .0f, 80.0f, 80.0f });
+        hayftForeground->setContentSize({ 153.f, 95.f });
+        hayftForeground->setAnchorPoint({ .5f, 1.f });
+        hayftForeground->setColor({ 123, 60, 31 });
+        hayftForeground->setScale(2.05f);
+        hayftForeground->setPosition({284.5f, 245.f});
+        hayftForeground->setID("cmod-hayft-foreground");
 /* -------------------------- hayftPopup_InfoButton ------------------------- */
         auto hayftPopup_InfoButtonSpr = CCSprite::createWithSpriteFrameName("GJ_infoIcon_001.png");
         hayftPopup_InfoButtonSpr->setScale(0.8f);
@@ -81,7 +82,7 @@ protected:
         m_closeBtn->setPosition({-182.f, 115.f});
         m_bgSprite->setScale(1.55f);
 /* ----------------------- Add children to hayft popup ---------------------- */
-        this->addChild(foreground);
+        this->addChild(hayftForeground);
 /* ---------------------------------- Other --------------------------------- */
         return true;
     }
