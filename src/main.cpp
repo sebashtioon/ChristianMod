@@ -14,10 +14,15 @@
 #include <Geode/binding/TextArea.hpp>
 #include <Geode/ui/BasedButtonSprite.hpp>
 #include <Geode/binding/CCMenuItemSpriteExtra.hpp>
+#include "ChristianModLayer.hpp"
+#include "ChristianModScene.hpp"
+#include "HAYFT_Popup.hpp"
+
 
 using namespace geode::prelude;
 using namespace cocos2d;
 
+// Keep CustomMenuLayer in the main file
 
 // specify parameters for the setup function in the Popup<...> template
 class HAYFT_Popup : public geode::Popup<std::string const&> {
@@ -332,7 +337,6 @@ public:
 // Modify the MenuLayer to add the FLAlertLayer with the Verse of the Day popup
 class $modify(CustomMenuLayer, MenuLayer) {
 public:
-    // Use the Fields struct to add custom fields
     struct Fields {
         FLAlertLayer* VOTD_Popup = nullptr;
     };
@@ -340,12 +344,10 @@ public:
     bool init() override {
         if (!MenuLayer::init()) return false;
 
-        // Create the Verse of the Day alert and store the reference in m_fields
         m_fields->VOTD_Popup = FLAlertLayer::create(
-            this,  // Set this layer as the delegate to handle button callbacks
+            this,
             "Verse Of The Day",
-            "<cr>John 3:16</c> - For God so loved the world that he gave his one and only Son, "
-            "that whoever believes in him shall not perish but have eternal life.",
+            "<cr>John 3:16</c> - For God so loved the world...",
             "AMEN",
             "PRAY"
         );
@@ -355,61 +357,37 @@ public:
         return true;
     }
 
-    // Overriding the delegate method that is called when a button is clicked in FLAlertLayer
     void FLAlert_Clicked(FLAlertLayer* alert, bool btn2) override {
-        // Check if the clicked alert is the Verse of the Day alert
-        if (alert == m_fields->VOTD_Popup) {
-            if (btn2) {  // If the "PRAY" button (right button) was clicked
-                // Create and push the custom scene onto the stack
-                auto scene = ChristianModScene::create();
-                CCDirector::sharedDirector()->pushScene(scene);
-            }
-        } 
-        // Handle other alerts (like quit game) as needed (or just do nothing)
-        else {
-            // Handle the default behavior for other alerts
+        if (alert == m_fields->VOTD_Popup && btn2) {
+            auto scene = ChristianModScene::create();
+            CCDirector::sharedDirector()->pushScene(scene);
+        } else {
             MenuLayer::FLAlert_Clicked(alert, btn2);
         }
     }
 };
 
-
-
-
-class $modify(CustomCreatorLayer, CreatorLayer)
-{
+// Keep CustomCreatorLayer in the main file
+class $modify(CustomCreatorLayer, CreatorLayer) {
     bool init() override {
         if (!CreatorLayer::init()) return false;
-        
+
         auto BibleIcon = CCSprite::create("BibleIcon.png"_spr);
-
         auto bottomLeftMenu = this->getChildByID("bottom-left-menu");
-        auto spr = CircleButtonSprite::createWithSprite("BibleIcon.png"_spr, 1.0f, CircleBaseColor::Green, CircleBaseSize::Small);
-
-        spr->setScale(1.225);
 
         auto MainMenuButton = CCMenuItemSpriteExtra::create(
-            spr,
+            BibleIcon,
             this,
             menu_selector(CustomCreatorLayer::onMainMenuButton_Pressed)
         );
-
-        MainMenuButton->setID("cmod-main-menu-button");
-
         bottomLeftMenu->addChild(MainMenuButton);
-
-        MainMenuButton->setPosition(22.000, 27.000);
-
+        MainMenuButton->setPosition(22.0f, 27.0f);
 
         return true;
     }
 
-    // Button press handler
-    void onMainMenuButton_Pressed(CCObject* pSender)
-    {
+    void onMainMenuButton_Pressed(CCObject* pSender) {
         auto scene = ChristianModScene::create();
         CCDirector::sharedDirector()->pushScene(scene);
     }
 };
-
-
