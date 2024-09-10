@@ -28,8 +28,6 @@ protected:
         title->setPosition({290.f, 264.f});
         title->setScale(0.675);
         this->addChild(title);
-
-
 /* --------------------------- HAYFT Buttons menu --------------------------- */
         auto hayftButtonsMenu = CCMenu::create();
         hayftButtonsMenu->setPosition(winSize / 2);
@@ -44,13 +42,17 @@ protected:
         foreground->setColor({ 123, 60, 31 });
         foreground->setScale(2.05f);
         foreground->setPosition({284.5f, 245.f});
-/* ------------------------------- InfoButton ------------------------------- */
-        auto InfoButton = CCMenuItemSpriteExtra::create(
-            CCSprite::createWithSpriteFrameName("GJ_infoIcon_001.png"),
+/* -------------------------- hayftPopup_InfoButton ------------------------- */
+        auto hayftPopup_InfoButtonSpr = CCSprite::createWithSpriteFrameName("GJ_infoIcon_001.png");
+        hayftPopup_InfoButtonSpr->setScale(0.8f);
+
+        auto hayftPopup_InfoButton = CCMenuItemSpriteExtra::create(
+            hayftPopup_InfoButtonSpr,
             this,
-            menu_selector(HAYFT_Popup::onInfoBtn)
+            menu_selector(HAYFT_Popup::onhayftPopupInfoBtn)
         );
-        InfoButton->setPosition({169.f, 76.f});
+        hayftPopup_InfoButton->setID("info-button");
+        hayftPopup_InfoButton->setPosition({-182.f, 86.f});
 /* -------------------------------------------------------------------------- */
 /*                       Create HAYFT Buttons (feelings)                      */
 /* -------------------------------------------------------------------------- */
@@ -69,18 +71,16 @@ protected:
             this, 
             menu_selector(HAYFT_Popup::onCalmBtn)
             );
-
-
+        calmBtn->setID("cmod-calm-btn");
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
-        hayftButtonsMenu->addChild(InfoButton);
-
+        hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
         hayftButtonsMenu->addChild(calmBtn);
   
 /* ------------------------------ Popup config ------------------------------ */
         m_closeBtn->setPosition({-182.f, 115.f});
         m_bgSprite->setScale(1.55f);
-/* -------------------------- Add children to popup ------------------------- */
+/* ----------------------- Add children to hayft popup ---------------------- */
         this->addChild(foreground);
 /* ---------------------------------- Other --------------------------------- */
         return true;
@@ -97,9 +97,13 @@ public:
         delete ret;
         return nullptr;
     }
-    void onInfoBtn(CCObject* sender)
+    void onhayftPopupInfoBtn(CCObject* sender)
     {
-
+        FLAlertLayer::create(
+            "Info",    // title
+            "This module is meant to help you connect with <cr><God's word</c> through how you are feeling. Simply select an emotion based on how you are feeling, and you will get random <cr>Bible verse</c> given as God's word to you.",
+            "OK"
+        )->show();
     }
 
     void onHappyBtn(CCObject* sender)
