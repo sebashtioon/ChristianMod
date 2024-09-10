@@ -67,7 +67,7 @@ protected:
             menu_selector(HAYFT_Popup::onHappyBtn)
             );
         happyBtn->setID("cmod-happy-btn");
-        happyBtn->setPosition({-104.f, 47.f});
+        happyBtn->setPosition({-100.f, 47.f});
 
 /* ---------------------------------- Calm ---------------------------------- */
         auto calmBtnSprite = CCSprite::create("calm-complete.png"_spr);
@@ -78,17 +78,17 @@ protected:
             menu_selector(HAYFT_Popup::onCalmBtn)
             );
         calmBtn->setID("cmod-calm-btn");
-        calmBtn->setPosition({-42.f, 47.f});
+        calmBtn->setPosition({-40.f, 47.f});
 /* --------------------------------- Nervous -------------------------------- */
         auto nervousBtnSprite = CCSprite::create("nervous-complete.png"_spr);
-        nervousBtnSprite->setScale(0.1f);
+        nervousBtnSprite->setScale(0.105f);
         auto nervousBtn = CCMenuItemSpriteExtra::create(
             nervousBtnSprite, 
             this, 
             menu_selector(HAYFT_Popup::onNervousBtn)
             );
         nervousBtn->setID("cmod-nervous-btn");
-        nervousBtn->setPosition({-20.f, 47.f});
+        nervousBtn->setPosition({20.f, 47.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
