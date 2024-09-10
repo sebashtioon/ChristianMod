@@ -1,4 +1,5 @@
 #include "ChristianModScene.hpp"
+#include "ChristianModLayer.hpp"
 
 bool ChristianModScene::init() {
     if (!CCScene::init()) return false;

@@ -8,7 +8,7 @@ protected:
 public:
     static HAYFT_Popup* create(std::string const& text);
 
-    // Button handlers
+
     void onInfoBtn(CCObject* sender);
     void onHappyBtn(CCObject* sender);
     void onCalmBtn(CCObject* sender);
