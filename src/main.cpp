@@ -64,6 +64,9 @@ protected:
             this, 
             menu_selector(HAYFT_Popup::onHappyBtn)
             );
+        happyBtn->setID("cmod-happy-btn");
+        happyBtn->setPosition({-104.f, 47.f});
+
 /* ---------------------------------- Calm ---------------------------------- */
         auto calmBtnSprite = CCSprite::create("calm-complete.png"_spr);
         calmBtnSprite->setScale(0.1f);
@@ -73,9 +76,11 @@ protected:
             menu_selector(HAYFT_Popup::onCalmBtn)
             );
         calmBtn->setID("cmod-calm-btn");
+        calmBtn->setPosition({-42.f, 47.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
-
+        
+        hayftButtonsMenu->addChild(happyBtn);
         hayftButtonsMenu->addChild(calmBtn);
   
 /* ------------------------------ Popup config ------------------------------ */
