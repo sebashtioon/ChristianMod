@@ -1,2 +1,0 @@
-# ChristianMod
-Update this soon!
