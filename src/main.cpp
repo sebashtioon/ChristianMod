@@ -12,8 +12,10 @@
 #include <Geode/binding/TextArea.hpp>
 #include <Geode/ui/BasedButtonSprite.hpp>
 #include <Geode/binding/CCMenuItemSpriteExtra.hpp>
-#include "HAYFT_Popup.hpp"
+#include "ChristianModLayer.hpp"
 #include "ChristianModScene.hpp"
+#include "HAYFT_Popup.hpp"
+
 
 using namespace geode::prelude;
 using namespace cocos2d;

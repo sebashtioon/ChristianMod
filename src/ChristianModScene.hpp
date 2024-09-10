@@ -1,3 +1,4 @@
+// ChristianModScene.hpp
 #pragma once
 #include <cocos2d.h>
 #include "ChristianModLayer.hpp"
