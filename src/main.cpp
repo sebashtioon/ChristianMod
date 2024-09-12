@@ -89,13 +89,23 @@ protected:
             );
         nervousBtn->setID("cmod-nervous-btn");
         nervousBtn->setPosition({20.f, 47.f});
+/* ---------------------------------- Angry --------------------------------- */
+        auto angryBtnSprite = CCSprite::create("angry-complete.png"_spr);
+        angryBtnSprite->setScale(0.105f);
+        auto angryBtn = CCMenuItemSpriteExtra::create(
+            angryBtnSprite, 
+            this, 
+            menu_selector(HAYFT_Popup::onAngryBtn)
+            );
+        angryBtn->setID("cmod-angry-btn");
+        angryBtn->setPosition({80.f, 47.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
         hayftButtonsMenu->addChild(happyBtn);
         hayftButtonsMenu->addChild(calmBtn);
         hayftButtonsMenu->addChild(nervousBtn);
-  
+        hayftButtonsMenu->addChild(angryBtn);
 /* ------------------------------ Popup config ------------------------------ */
         m_closeBtn->setPosition({-182.f, 115.f});
         m_bgSprite->setScale(1.55f);
@@ -134,6 +144,10 @@ public:
 
     }
     void onNervousBtn(CCObject* sender)
+    {
+
+    }
+    void onAngryBtn(CCObject* sender)
     {
 
     }
