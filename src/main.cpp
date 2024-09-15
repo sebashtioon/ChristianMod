@@ -154,6 +154,16 @@ protected:
             );
         fearfulBtn->setID("cmod-fearful-btn");
         fearfulBtn->setPosition({-100.f, -75.f});
+/* -------------------------------- Thankful -------------------------------- */
+        auto thankfulBtnSprite = CCSprite::create("thankful-complete.png"_spr);
+        thankfulBtnSprite->setScale(0.34f);
+        auto thankfulBtn = CCMenuItemSpriteExtra::create(
+            thankfulBtnSprite, 
+            this, 
+            menu_selector(HAYFT_Popup::onThankfulBtn)
+            );
+        thankfulBtn->setID("cmod-thankful-btn");
+        thankfulBtn->setPosition({-40.f, -75.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
@@ -166,6 +176,7 @@ protected:
         hayftButtonsMenu->addChild(blessedBtn);
         hayftButtonsMenu->addChild(faithfulBtn);
         hayftButtonsMenu->addChild(fearfulBtn);
+        hayftButtonsMenu->addChild(thankfulBtn);
 
 /* ------------------------------ Popup config ------------------------------ */
         m_closeBtn->setPosition({-182.f, 115.f});
@@ -229,6 +240,10 @@ public:
 
     }
     void onFearfulBtn(CCObject* sender)
+    {
+
+    }
+    void onThankfulBtn(CCObject* sender)
     {
 
     }
