@@ -35,7 +35,7 @@ protected:
         this->addChild(title);
 /* --------------------------- HAYFT Buttons menu --------------------------- */
         auto hayftButtonsMenu = CCMenu::create();
-        hayftButtonsMenu->setPosition(winSize / 2);
+        hayftButtonsMenu->setPosition({291.5f, 160.f});
         this->addChild(hayftButtonsMenu);
         hayftButtonsMenu->setID("cmod-hayft-buttons-menu");
         hayftButtonsMenu->setZOrder(1);
@@ -58,7 +58,7 @@ protected:
             menu_selector(HAYFT_Popup::onhayftPopupInfoBtn)
         );
         hayftPopup_InfoButton->setID("info-button");
-        hayftPopup_InfoButton->setPosition({-182.f, 86.f});
+        hayftPopup_InfoButton->setPosition({-189.f, 86.f});
 /* -------------------------------------------------------------------------- */
 /*                       Create HAYFT Buttons (feelings)                      */
 /* -------------------------------------------------------------------------- */
