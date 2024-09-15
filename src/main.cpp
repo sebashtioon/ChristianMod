@@ -50,7 +50,7 @@ protected:
         hayftForeground->setID("cmod-hayft-foreground");
 /* -------------------------- hayftPopup_InfoButton ------------------------- */
         auto hayftPopup_InfoButtonSpr = CCSprite::createWithSpriteFrameName("GJ_infoIcon_001.png");
-        hayftPopup_InfoButtonSpr->setScale(0.8f);
+        hayftPopup_InfoButtonSpr->setScale(1.025f);
 
         auto hayftPopup_InfoButton = CCMenuItemSpriteExtra::create(
             hayftPopup_InfoButtonSpr,
@@ -58,7 +58,7 @@ protected:
             menu_selector(HAYFT_Popup::onhayftPopupInfoBtn)
         );
         hayftPopup_InfoButton->setID("info-button");
-        hayftPopup_InfoButton->setPosition({-189.f, 86.f});
+        hayftPopup_InfoButton->setPosition({172.f, 116.f});
 /* -------------------------------------------------------------------------- */
 /*                       Create HAYFT Buttons (feelings)                      */
 /* -------------------------------------------------------------------------- */
