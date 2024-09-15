@@ -156,7 +156,7 @@ protected:
         fearfulBtn->setPosition({-100.f, -75.f});
 /* -------------------------------- Thankful -------------------------------- */
         auto thankfulBtnSprite = CCSprite::create("thankful-complete.png"_spr);
-        thankfulBtnSprite->setScale(0.34f);
+        thankfulBtnSprite->setScale(0.36f);
         auto thankfulBtn = CCMenuItemSpriteExtra::create(
             thankfulBtnSprite, 
             this, 
