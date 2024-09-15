@@ -108,7 +108,7 @@ protected:
             menu_selector(HAYFT_Popup::onGuiltyBtn)
             );
         guiltyBtn->setID("cmod-guilty-btn");
-        guiltyBtn->setPosition({100.f, -14.f});
+        guiltyBtn->setPosition({-100.f, -14.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
