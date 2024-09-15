@@ -146,7 +146,7 @@ protected:
         faithfulBtn->setPosition({80.f, -14.f});
 /* --------------------------------- Fearful -------------------------------- */
         auto fearfulBtnSprite = CCSprite::create("fearful-complete.png"_spr);
-        fearfulBtnSprite->setScale(0.34f);
+        fearfulBtnSprite->setScale(0.335f);
         auto fearfulBtn = CCMenuItemSpriteExtra::create(
             fearfulBtnSprite, 
             this, 
@@ -166,7 +166,7 @@ protected:
         thankfulBtn->setPosition({-40.f, -75.f});
 /* --------------------------------- Excited -------------------------------- */
         auto excitedBtnSprite = CCSprite::create("excited-complete.png"_spr);
-        excitedBtnSprite->setScale(0.36f);
+        excitedBtnSprite->setScale(0.335f);
         auto excitedBtn = CCMenuItemSpriteExtra::create(
             excitedBtnSprite, 
             this, 
