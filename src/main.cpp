@@ -136,7 +136,7 @@ protected:
         blessedBtn->setPosition({20.f, -14.f});
 /* -------------------------------- Faithful -------------------------------- */
         auto faithfulBtnSprite = CCSprite::create("faithful-complete.png"_spr);
-        faithfulBtnSprite->setScale(0.368f);
+        faithfulBtnSprite->setScale(0.375f);
         auto faithfulBtn = CCMenuItemSpriteExtra::create(
             faithfulBtnSprite, 
             this, 
@@ -144,6 +144,16 @@ protected:
             );
         faithfulBtn->setID("cmod-faithful-btn");
         faithfulBtn->setPosition({80.f, -14.f});
+/* --------------------------------- Fearful -------------------------------- */
+        auto fearfulBtnSprite = CCSprite::create("fearful-complete.png"_spr);
+        fearfulBtnSprite->setScale(0.375f);
+        auto fearfulBtn = CCMenuItemSpriteExtra::create(
+            fearfulBtnSprite, 
+            this, 
+            menu_selector(HAYFT_Popup::onFearfulBtn)
+            );
+        fearfulBtn->setID("cmod-fearful-btn");
+        fearfulBtn->setPosition({100.f, -75.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
@@ -155,6 +165,8 @@ protected:
         hayftButtonsMenu->addChild(sadBtn);
         hayftButtonsMenu->addChild(blessedBtn);
         hayftButtonsMenu->addChild(faithfulBtn);
+        hayftButtonsMenu->addChild(fearfulBtn);
+
 /* ------------------------------ Popup config ------------------------------ */
         m_closeBtn->setPosition({-182.f, 115.f});
         m_bgSprite->setScale(1.55f);
@@ -213,6 +225,10 @@ public:
 
     }
     void onFaithfulBtn(CCObject* sender)
+    {
+
+    }
+    void onFearfulBtn(CCObject* sender)
     {
 
     }
