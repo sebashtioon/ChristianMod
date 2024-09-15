@@ -100,7 +100,7 @@ protected:
         angryBtn->setID("cmod-angry-btn");
         angryBtn->setPosition({80.f, 47.f});
 /* --------------------------------- Guilty --------------------------------- */
-        auto guiltyBtnSprite = CCSprite::create("angry-complete.png"_spr);
+        auto guiltyBtnSprite = CCSprite::create("guilty-complete.png"_spr);
         guiltyBtnSprite->setScale(0.105f);
         auto guiltyBtn = CCMenuItemSpriteExtra::create(
             guiltyBtnSprite, 
@@ -108,7 +108,7 @@ protected:
             menu_selector(HAYFT_Popup::onGuiltyBtn)
             );
         guiltyBtn->setID("cmod-guilty-btn");
-        guiltyBtn->setPosition({80.f, 47.f});
+        guiltyBtn->setPosition({100.f, -14.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
