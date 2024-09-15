@@ -126,7 +126,7 @@ protected:
         sadBtn->setPosition({-40.f, -14.f});
 /* --------------------------------- Blessed -------------------------------- */
         auto blessedBtnSprite = CCSprite::create("blessed-complete.png"_spr);
-        blessedBtnSprite->setScale(0.368f);
+        blessedBtnSprite->setScale(0.335f);
         auto blessedBtn = CCMenuItemSpriteExtra::create(
             blessedBtnSprite, 
             this, 
@@ -136,7 +136,7 @@ protected:
         blessedBtn->setPosition({20.f, -14.f});
 /* -------------------------------- Faithful -------------------------------- */
         auto faithfulBtnSprite = CCSprite::create("faithful-complete.png"_spr);
-        faithfulBtnSprite->setScale(0.375f);
+        faithfulBtnSprite->setScale(0.335f);
         auto faithfulBtn = CCMenuItemSpriteExtra::create(
             faithfulBtnSprite, 
             this, 
@@ -156,7 +156,7 @@ protected:
         fearfulBtn->setPosition({-100.f, -75.f});
 /* -------------------------------- Thankful -------------------------------- */
         auto thankfulBtnSprite = CCSprite::create("thankful-complete.png"_spr);
-        thankfulBtnSprite->setScale(0.36f);
+        thankfulBtnSprite->setScale(0.335f);
         auto thankfulBtn = CCMenuItemSpriteExtra::create(
             thankfulBtnSprite, 
             this, 
@@ -176,7 +176,7 @@ protected:
         excitedBtn->setPosition({20.f, -75.f});
 /* ---------------------------------- Weak ---------------------------------- */
         auto weakBtnSprite = CCSprite::create("weak-complete.png"_spr);
-        weakBtnSprite->setScale(0.36f);
+        weakBtnSprite->setScale(0.335f);
         auto weakBtn = CCMenuItemSpriteExtra::create(
             weakBtnSprite, 
             this, 
