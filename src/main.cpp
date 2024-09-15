@@ -124,7 +124,7 @@ protected:
             );
         sadBtn->setID("cmod-sad-btn");
         sadBtn->setPosition({-40.f, -14.f});
-/* ----------------------------------- Sad ---------------------------------- */
+/* --------------------------------- Blessed -------------------------------- */
         auto blessedBtnSprite = CCSprite::create("blessed-complete.png"_spr);
         blessedBtnSprite->setScale(0.368f);
         auto blessedBtn = CCMenuItemSpriteExtra::create(
@@ -134,6 +134,16 @@ protected:
             );
         blessedBtn->setID("cmod-blessed-btn");
         blessedBtn->setPosition({20.f, -14.f});
+/* -------------------------------- Faithful -------------------------------- */
+        auto faithfulBtnSprite = CCSprite::create("faithful-complete.png"_spr);
+        faithfulBtnSprite->setScale(0.368f);
+        auto faithfulBtn = CCMenuItemSpriteExtra::create(
+            faithfulBtnSprite, 
+            this, 
+            menu_selector(HAYFT_Popup::onFaithfulBtn)
+            );
+        faithfulBtn->setID("cmod-faithful-btn");
+        faithfulBtn->setPosition({80.f, -14.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
@@ -144,6 +154,7 @@ protected:
         hayftButtonsMenu->addChild(guiltyBtn);
         hayftButtonsMenu->addChild(sadBtn);
         hayftButtonsMenu->addChild(blessedBtn);
+        hayftButtonsMenu->addChild(faithfulBtn);
 /* ------------------------------ Popup config ------------------------------ */
         m_closeBtn->setPosition({-182.f, 115.f});
         m_bgSprite->setScale(1.55f);
@@ -198,6 +209,10 @@ public:
 
     }
     void onBlessedBtn(CCObject* sender)
+    {
+
+    }
+    void onFaithfulBtn(CCObject* sender)
     {
 
     }
