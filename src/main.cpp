@@ -19,8 +19,8 @@ using namespace cocos2d;
 
 
 $execute {
-    log::info("Successfully loaded ChristianMod")
-};
+    log::info("Successfully loaded ChristianMod");
+}
 
 // specify parameters for the setup function in the Popup<...> template
 class HAYFT_Popup : public geode::Popup<std::string const&> {
