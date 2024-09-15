@@ -18,7 +18,7 @@ using namespace cocos2d;
 
 
 
-$execute {
+$execute { // Never used this before so it just seemed cool to do this lol
     log::info("Successfully loaded ChristianMod");
 }
 
@@ -146,7 +146,7 @@ protected:
         faithfulBtn->setPosition({80.f, -14.f});
 /* --------------------------------- Fearful -------------------------------- */
         auto fearfulBtnSprite = CCSprite::create("fearful-complete.png"_spr);
-        fearfulBtnSprite->setScale(0.375f);
+        fearfulBtnSprite->setScale(0.34f);
         auto fearfulBtn = CCMenuItemSpriteExtra::create(
             fearfulBtnSprite, 
             this, 
