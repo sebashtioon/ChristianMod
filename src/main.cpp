@@ -164,6 +164,26 @@ protected:
             );
         thankfulBtn->setID("cmod-thankful-btn");
         thankfulBtn->setPosition({-40.f, -75.f});
+/* --------------------------------- Excited -------------------------------- */
+        auto excitedBtnSprite = CCSprite::create("excited-complete.png"_spr);
+        excitedBtnSprite->setScale(0.36f);
+        auto excitedBtn = CCMenuItemSpriteExtra::create(
+            excitedBtnSprite, 
+            this, 
+            menu_selector(HAYFT_Popup::onExcitedBtn)
+            );
+        excitedBtn->setID("cmod-excited-btn");
+        excitedBtn->setPosition({20.f, -75.f});
+/* ---------------------------------- Weak ---------------------------------- */
+        auto weakBtnSprite = CCSprite::create("weak-complete.png"_spr);
+        weakBtnSprite->setScale(0.36f);
+        auto weakBtn = CCMenuItemSpriteExtra::create(
+            weakBtnSprite, 
+            this, 
+            menu_selector(HAYFT_Popup::onWeakBtn)
+            );
+        weakBtn->setID("cmod-weak-btn");
+        weakBtn->setPosition({80.f, -75.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
@@ -177,6 +197,8 @@ protected:
         hayftButtonsMenu->addChild(faithfulBtn);
         hayftButtonsMenu->addChild(fearfulBtn);
         hayftButtonsMenu->addChild(thankfulBtn);
+        hayftButtonsMenu->addChild(excitedBtn);
+        hayftButtonsMenu->addChild(weakBtn);
 
 /* ------------------------------ Popup config ------------------------------ */
         m_closeBtn->setPosition({-182.f, 115.f});
@@ -244,6 +266,14 @@ public:
 
     }
     void onThankfulBtn(CCObject* sender)
+    {
+
+    }
+    void onExcitedBtn(CCObject* sender)
+    {
+
+    }
+    void onWeakBtn(CCObject* sender)
     {
 
     }
