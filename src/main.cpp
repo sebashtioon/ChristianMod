@@ -153,7 +153,7 @@ protected:
             menu_selector(HAYFT_Popup::onFearfulBtn)
             );
         fearfulBtn->setID("cmod-fearful-btn");
-        fearfulBtn->setPosition({100.f, -75.f});
+        fearfulBtn->setPosition({-100.f, -75.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
