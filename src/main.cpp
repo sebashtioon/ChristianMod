@@ -99,6 +99,16 @@ protected:
             );
         angryBtn->setID("cmod-angry-btn");
         angryBtn->setPosition({80.f, 47.f});
+/* --------------------------------- Guilty --------------------------------- */
+        auto guiltyBtnSprite = CCSprite::create("angry-complete.png"_spr);
+        guiltyBtnSprite->setScale(0.105f);
+        auto guiltyBtn = CCMenuItemSpriteExtra::create(
+            guiltyBtnSprite, 
+            this, 
+            menu_selector(HAYFT_Popup::onGuiltyBtn)
+            );
+        guiltyBtn->setID("cmod-guilty-btn");
+        guiltyBtn->setPosition({80.f, 47.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
@@ -106,6 +116,8 @@ protected:
         hayftButtonsMenu->addChild(calmBtn);
         hayftButtonsMenu->addChild(nervousBtn);
         hayftButtonsMenu->addChild(angryBtn);
+        hayftButtonsMenu->addChild(guiltyBtn);
+
 /* ------------------------------ Popup config ------------------------------ */
         m_closeBtn->setPosition({-182.f, 115.f});
         m_bgSprite->setScale(1.55f);
@@ -151,7 +163,10 @@ public:
     {
 
     }
-    
+    void onGuiltyBtn(CCObject* sender)
+    {
+
+    }
 
 };
 
