@@ -119,6 +119,16 @@ protected:
             );
         sadBtn->setID("cmod-sad-btn");
         sadBtn->setPosition({-40.f, -14.f});
+/* ----------------------------------- Sad ---------------------------------- */
+        auto blessedBtnSprite = CCSprite::create("blessed-complete.png"_spr);
+        blessedBtnSprite->setScale(0.105f);
+        auto blessedBtn = CCMenuItemSpriteExtra::create(
+            blessedBtnSprite, 
+            this, 
+            menu_selector(HAYFT_Popup::onBlessedBtn)
+            );
+        blessedBtn->setID("cmod-blessed-btn");
+        blessedBtn->setPosition({20.f, -14.f});
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
@@ -128,7 +138,7 @@ protected:
         hayftButtonsMenu->addChild(angryBtn);
         hayftButtonsMenu->addChild(guiltyBtn);
         hayftButtonsMenu->addChild(sadBtn);
-
+        hayftButtonsMenu->addChild(blessedBtn);
 /* ------------------------------ Popup config ------------------------------ */
         m_closeBtn->setPosition({-182.f, 115.f});
         m_bgSprite->setScale(1.55f);
@@ -179,6 +189,10 @@ public:
 
     }
     void onSadBtn(CCObject* sender)
+    {
+
+    }
+    void onBlessedBtn(CCObject* sender)
     {
 
     }
