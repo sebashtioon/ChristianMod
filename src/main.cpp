@@ -196,7 +196,7 @@ protected:
         this->addChild(hayftPopup_InfoButtonMenu);
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
 
-        hayftButtonsMenu->addChild(hayftPopup_InfoButton);
+        hayftPopup_InfoButtonMenu->addChild(hayftPopup_InfoButton);
 
         hayftButtonsMenu->addChild(happyBtn);
         hayftButtonsMenu->addChild(calmBtn);
