@@ -2,16 +2,22 @@
 #include <cocos2d.h>
 
 #include <Geode/Enums.hpp>
+
 #include <Geode/modify/MenuLayer.hpp>
 #include <Geode/modify/CreatorLayer.hpp>
 #include <Geode/modify/CCLayer.hpp>
 #include <Geode/modify/CCScene.hpp>
+
 #include <Geode/binding/FLAlertLayer.hpp>
 #include <Geode/ui/Popup.hpp>
 #include <Geode/ui/MDTextArea.hpp>
 #include <Geode/binding/TextArea.hpp>
 #include <Geode/ui/BasedButtonSprite.hpp>
 #include <Geode/binding/CCMenuItemSpriteExtra.hpp>
+
+
+#include <Geode/cocos/actions/CCActionInterval.h>
+#include <Geode/cocos/base_nodes/CCNode.h>
 
 using namespace geode::prelude;
 using namespace cocos2d;
@@ -33,6 +39,7 @@ protected:
         title->setPosition({290.f, 264.f});
         title->setScale(0.675);
         this->addChild(title);
+        title->setID("cmod-hayft-popup-title");
 /* --------------------------- HAYFT Buttons menu --------------------------- */
         auto hayftButtonsMenu = CCMenu::create();
         hayftButtonsMenu->setPosition({291.5f, 160.f});
@@ -184,7 +191,11 @@ protected:
             );
         weakBtn->setID("cmod-weak-btn");
         weakBtn->setPosition({80.f, -75.f});
+/* ------------------------ hayftPopup_InfoButtonMenu ----------------------- */
+        auto hayftPopup_InfoButtonMenu = CCMenu::create();
+        this->addChild(hayftPopup_InfoButtonMenu);
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
+
         hayftButtonsMenu->addChild(hayftPopup_InfoButton);
 
         hayftButtonsMenu->addChild(happyBtn);
@@ -223,12 +234,11 @@ public:
     void onhayftPopupInfoBtn(CCObject* sender)
     {
         FLAlertLayer::create(
-            "Info",    // title
+            "Module Overview",
             "This module is meant to help you connect with <cr>God's word</c> through how you are feeling. Simply select an emotion based on how you are feeling, and you will get random <cr>Bible verse</c> given as <cr>God's word</c> to you.",
             "OK"
         )->show();
     }
-
 
     void displayMessage(const std::string& message) {
         auto popup = Popup::create("Message", message, "OK");
@@ -236,6 +246,17 @@ public:
     }
 
     void onHappyBtn(CCObject* sender) {
+
+        auto hayftButtonsMenu = this->getChildByID("cmod-hayft-buttons-menu");
+        // Create fade out action
+        auto fadeOut = CCFadeOut::create(1.0f); // 2 seconds to fade out
+
+        // Create a sequence of fade out and fade in
+        auto sequence = CCSequence::create(fadeOut, nullptr);
+
+
+        // Run the sequence action on the sprite
+        hayftButtonsMenu->runAction(sequence);
         displayMessage("Rejoice in the Lord always. I will say it again: Rejoice! - Philippians 4:4");
     }
 
@@ -284,9 +305,6 @@ public:
     }
 
 };
-
-
-
 
 
 class ChristianModLayer : public CCLayer {
