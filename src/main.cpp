@@ -229,54 +229,60 @@ public:
         )->show();
     }
 
-    void onHappyBtn(CCObject* sender)
-    {
 
+    void displayMessage(const std::string& message) {
+        auto popup = Popup::create("Message", message, "OK");
+        popup->show();
     }
-    void onCalmBtn(CCObject* sender)
-    {
 
+    void onHappyBtn(CCObject* sender) {
+        displayMessage("Rejoice in the Lord always. I will say it again: Rejoice! - Philippians 4:4");
     }
-    void onNervousBtn(CCObject* sender)
-    {
 
+    void onCalmBtn(CCObject* sender) {
+        displayMessage("Peace I leave with you; my peace I give you. - John 14:27");
     }
-    void onAngryBtn(CCObject* sender)
-    {
 
+    void onNervousBtn(CCObject* sender) {
+        displayMessage("Cast all your anxiety on him because he cares for you. - 1 Peter 5:7");
     }
-    void onGuiltyBtn(CCObject* sender)
-    {
 
+    void onAngryBtn(CCObject* sender) {
+        displayMessage("In your anger do not sin: Do not let the sun go down while you are still angry. - Ephesians 4:26");
     }
-    void onSadBtn(CCObject* sender)
-    {
 
+    void onGuiltyBtn(CCObject* sender) {
+        displayMessage("If we confess our sins, he is faithful and just and will forgive us our sins. - 1 John 1:9");
     }
-    void onBlessedBtn(CCObject* sender)
-    {
 
+    void onSadBtn(CCObject* sender) {
+        displayMessage("The Lord is close to the brokenhearted and saves those who are crushed in spirit. - Psalm 34:18");
     }
-    void onFaithfulBtn(CCObject* sender)
-    {
 
+    void onBlessedBtn(CCObject* sender) {
+        displayMessage("The Lord bless you and keep you; the Lord make his face shine on you. - Numbers 6:24-25");
     }
-    void onFearfulBtn(CCObject* sender)
-    {
 
+    void onFaithfulBtn(CCObject* sender) {
+        displayMessage("Let us hold unswervingly to the hope we profess, for he who promised is faithful. - Hebrews 10:23");
     }
-    void onThankfulBtn(CCObject* sender)
-    {
 
+    void onFearfulBtn(CCObject* sender) {
+        displayMessage("For God has not given us a spirit of fear, but of power and of love and of a sound mind. - 2 Timothy 1:7");
     }
-    void onExcitedBtn(CCObject* sender)
-    {
 
+    void onThankfulBtn(CCObject* sender) {
+        displayMessage("Give thanks to the Lord, for he is good; his love endures forever. - Psalm 107:1");
     }
-    void onWeakBtn(CCObject* sender)
-    {
 
+    void onExcitedBtn(CCObject* sender) {
+        displayMessage("This is the day that the Lord has made; let us rejoice and be glad in it. - Psalm 118:24");
     }
+
+    void onWeakBtn(CCObject* sender) {
+        displayMessage("My grace is sufficient for you, for my power is made perfect in weakness. - 2 Corinthians 12:9");
+    }
+
 };
 
 
