@@ -126,7 +126,7 @@ protected:
         sadBtn->setPosition({-40.f, -14.f});
 /* --------------------------------- Blessed -------------------------------- */
         auto blessedBtnSprite = CCSprite::create("blessed-complete.png"_spr);
-        blessedBtnSprite->setScale(0.335f);
+        blessedBtnSprite->setScale(0.368f);
         auto blessedBtn = CCMenuItemSpriteExtra::create(
             blessedBtnSprite, 
             this, 
