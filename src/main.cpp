@@ -240,7 +240,19 @@ public:
             "OK"
         )->show();
     }
-
+    void disableHayftButtonsMenu() {
+        // Retrieve the menu by ID
+        auto hayftButtonsMenu = this->getChildByID("cmod-hayft-buttons-menu");
+        
+        // Ensure the menu is not null and cast it to CCMenu
+        if (hayftButtonsMenu) {
+            auto menu = dynamic_cast<CCMenu*>(hayftButtonsMenu);
+            if (menu) {
+                // Disable the menu
+                menu->setEnabled(false);
+            }
+        }
+    }
     void displayMessage(const std::string& message) {
         auto popup = Popup::create("Message", message, "OK");
         popup->show();
@@ -257,6 +269,7 @@ public:
 
 
         // Run the sequence action on the sprite
+        disableHayftButtonsMenu();
         hayftButtonsMenu->runAction(sequence);
         displayMessage("Rejoice in the Lord always. I will say it again: Rejoice! - Philippians 4:4");
     }
@@ -315,6 +328,9 @@ public:
     };
     bool init() {
         if (!CCLayer::init()) return false;
+
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                              Utility Variables                             */
