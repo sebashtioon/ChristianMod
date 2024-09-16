@@ -194,6 +194,7 @@ protected:
 /* ------------------------ hayftPopup_InfoButtonMenu ----------------------- */
         auto hayftPopup_InfoButtonMenu = CCMenu::create();
         this->addChild(hayftPopup_InfoButtonMenu);
+        hayftPopup_InfoButtonMenu->setID("cmod-hayft-popup-infobutton-menu");
 /* ------------------- Add buttons to the hayftButtonsMenu ------------------ */
 
         hayftPopup_InfoButtonMenu->addChild(hayftPopup_InfoButton);
