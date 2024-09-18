@@ -15,6 +15,7 @@
 #include <Geode/ui/BasedButtonSprite.hpp>
 #include <Geode/binding/CCMenuItemSpriteExtra.hpp>
 
+#include <Geode/cocos/actions/CCActionInstant.h>
 
 #include <Geode/cocos/actions/CCActionInterval.h>
 #include <Geode/cocos/base_nodes/CCNode.h>
@@ -258,6 +259,26 @@ public:
         popup->show();
     }
 
+    void runHayftAnimation() {
+        auto hayftTTL = this->getChildByID("cmod-hayft-popup-title");
+        auto ttl = dynamic_cast<CCLabelBMFont*>(hayftTTL);
+
+        if (ttl) {
+            auto fadeOut = CCFadeOut::create(0.5f);
+            // Create a callback to change the text after fading out
+            ttl->setString("God's word for you");
+
+            // Create a fade-in action
+            auto fadeIn = CCFadeIn::create(0.5f);
+
+            // Create a sequence of fade out, change text, and fade in
+            auto sequence = CCSequence::create(fadeOut, changeText, fadeIn, nullptr);
+
+            // Run the sequence action on the title
+            ttl->runAction(sequence);
+        }
+    }
+
     void onHappyBtn(CCObject* sender) {
 
         auto hayftButtonsMenu = this->getChildByID("cmod-hayft-buttons-menu");
@@ -267,11 +288,9 @@ public:
         // Create a sequence of fade out and fade in
         auto sequence = CCSequence::create(fadeOut, nullptr);
 
-
         // Run the sequence action on the sprite
         disableHayftButtonsMenu();
         hayftButtonsMenu->runAction(sequence);
-        displayMessage("Rejoice in the Lord always. I will say it again: Rejoice! - Philippians 4:4");
     }
 
     void onCalmBtn(CCObject* sender) {
