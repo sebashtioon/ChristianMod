@@ -1,1 +1,2 @@
-Edit this file to change your mod's support info, or delete it if you don't need it.
+If you find a bug, crash or error, please DM me on **Discord**, my username is **@sebashtioon**.
+I *will* respond.
