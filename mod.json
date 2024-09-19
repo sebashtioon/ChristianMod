@@ -15,7 +15,11 @@
 		"sprites": [
 			"resources/sprites/*.png",
 			"resources/sprites/faces/with text/*.png",
-			"resources/sprites/faces/without text/*.png"
+			"resources/sprites/faces/without text/*.png"	
+		],
+		"files": [
+			"resources/dailybibleversesniv.txt"
 		]
+			
 	}
 }

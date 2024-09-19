@@ -1,3 +1,9 @@
+#include <ctime>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include <filesystem>
+
 #include <Geode/Geode.hpp>
 #include <cocos2d.h>
 
@@ -27,6 +33,33 @@ using namespace cocos2d;
 
 $execute { // Never used this before so it just seemed cool to do this lol
     log::info("Successfully loaded ChristianMod");
+}
+
+
+
+// Function to load verses from the file
+std::vector<std::string> loadVerses(const std::string& filename) {
+    std::vector<std::string> verses;
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        log::error("Error: Could not open file {}", filename);
+        return verses;
+    }
+    std::string line;
+    while (std::getline(file, line)) {
+        if (!line.empty()) {
+            verses.push_back(line);
+        }
+    }
+    file.close();
+    return verses;
+}
+
+// Function to get the current day of the year
+int getDayOfYear() {
+    time_t now = time(0);
+    tm* localtm = localtime(&now);
+    return localtm->tm_yday;
 }
 
 // specify parameters for the setup function in the Popup<...> template
@@ -578,10 +611,8 @@ public:
     }
 };
 
-// Modify the MenuLayer to add the FLAlertLayer with the Verse of the Day popup
 class $modify(CustomMenuLayer, MenuLayer) {
 public:
-    // Use the Fields struct to add custom fields
     struct Fields {
         FLAlertLayer* VOTD_Popup = nullptr;
     };
@@ -589,40 +620,60 @@ public:
     bool init() override {
         if (!MenuLayer::init()) return false;
 
-        // Create the Verse of the Day alert and store the reference in m_fields
-        m_fields->VOTD_Popup = FLAlertLayer::create(
-            this,  // Set this layer as the delegate to handle button callbacks
-            "Verse Of The Day",
-            "<cr>John 3:16</c> - For God so loved the world that he gave his one and only Son, "
-            "that whoever believes in him shall not perish but have eternal life.",
-            "AMEN",
-            "PRAY"
-        );
-        m_fields->VOTD_Popup->m_scene = this;
-        m_fields->VOTD_Popup->show();
+        log::info("CustomMenuLayer::init() started"); // log the start of the function so we know it's working
 
+        // Verify the file path
+        std::string filePath = "C:\\Users\\sebas\\GDmodding\\ChristianMod\\resources\\dailybibleversesniv.txt";
+        log::info("Verifying file path: {}", filePath);
+
+        if (!std::filesystem::exists(filePath)) {
+            log::error("Error: File does not exist at path {}", filePath);
+            return false;
+        }
+
+        auto verses = loadVerses(filePath); // Load verses from the file
+
+        if (verses.empty()) { // check if empty
+            log::error("Error: No verses found in the file.");
+            return false;
+        }
+
+        log::info("First verse: {}", verses[0]); // print the first verse
+
+        if (!m_fields->VOTD_Popup) { // check is null (which it should be)
+            log::info("Initializing VOTD_Popup"); 
+            m_fields->VOTD_Popup = FLAlertLayer::create(
+                nullptr, 
+                "Verse of the Day", 
+                verses[0].c_str(), 
+                "OK", 
+                "PRAY"
+                );
+        }
+
+        // Additional logging and null checks
+        if (m_fields->VOTD_Popup) {
+            log::info("VOTD_Popup is not null, proceeding to add child.");
+            this->addChild(m_fields->VOTD_Popup);
+            m_fields->VOTD_Popup->setID("cmod-votd-popup");
+            m_fields->VOTD_Popup->setZOrder(5);
+        } else {
+            log::error("VOTD_Popup is null, cannot add child.");
+            return false;
+        }
+
+        log::info("CustomMenuLayer::init() completed successfully");
         return true;
     }
 
-    // Overriding the delegate method that is called when a button is clicked in FLAlertLayer
     void FLAlert_Clicked(FLAlertLayer* alert, bool btn2) override {
-        // Check if the clicked alert is the Verse of the Day alert
         if (alert == m_fields->VOTD_Popup) {
-            if (btn2) {  // If the "PRAY" button (right button) was clicked
-                // Create and push the custom scene onto the stack
-                auto scene = ChristianModScene::create();
-                CCDirector::sharedDirector()->pushScene(scene);
+            if (btn2) {
+                // Handle button click
             }
-        } 
-        // Handle other alerts (like quit game) as needed (or just do nothing)
-        else {
-            // Handle the default behavior for other alerts
-            MenuLayer::FLAlert_Clicked(alert, btn2);
         }
     }
 };
-
-
 
 
 class $modify(CustomCreatorLayer, CreatorLayer)
