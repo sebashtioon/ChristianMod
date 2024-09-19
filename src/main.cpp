@@ -57,16 +57,16 @@ protected:
         hayftForeground->setPosition({284.5f, 245.f});
         hayftForeground->setID("cmod-hayft-foreground");
 /* -------------------------- hayftPopup_InfoButton ------------------------- */
-        auto hayftPopup_InfoButtonSpr = CCSprite::createWithSpriteFrameName("GJ_infoIcon_001.png");
-        hayftPopup_InfoButtonSpr->setScale(1.025f);
+auto hayftPopup_InfoButtonSpr = CCSprite::createWithSpriteFrameName("GJ_infoIcon_001.png");
+hayftPopup_InfoButtonSpr->setScale(1.025f);
 
-        auto hayftPopup_InfoButton = CCMenuItemSpriteExtra::create(
-            hayftPopup_InfoButtonSpr,
-            this,
-            menu_selector(HAYFT_Popup::onhayftPopupInfoBtn)
-        );
-        hayftPopup_InfoButton->setID("info-button");
-        hayftPopup_InfoButton->setPosition({177.f, 116.f});
+auto hayftPopup_InfoButton = CCMenuItemSpriteExtra::create(
+    hayftPopup_InfoButtonSpr,
+    this,
+    menu_selector(HAYFT_Popup::onhayftPopupInfoBtn)
+);
+hayftPopup_InfoButton->setID("info-button");
+hayftPopup_InfoButton->setPosition({177.f, 116.f});
 /* -------------------------------------------------------------------------- */
 /*                       Create HAYFT Buttons (feelings)                      */
 /* -------------------------------------------------------------------------- */
@@ -233,43 +233,47 @@ public:
         delete ret;
         return nullptr;
     }
-    void onhayftPopupInfoBtn(CCObject* sender)
-    {
-        FLAlertLayer::create(
-            "Module Overview",
-            "This module is meant to help you connect with <cr>God's word</c> through how you are feeling. Simply select an emotion based on how you are feeling, and you will get random <cr>Bible verse</c> given as <cr>God's word</c> to you.",
-            "OK"
-        )->show();
-    }
-    void disableHayftButtonsMenu() {
-        // Retrieve the menu by ID
-        auto hayftButtonsMenu = this->getChildByID("cmod-hayft-buttons-menu");
-        
-        // Ensure the menu is not null and cast it to CCMenu
+
+    void disableHayftButtonsMenu(CCNode* node) {
+        auto hayftButtonsMenu = node->getChildByID("cmod-hayft-buttons-menu");
         if (hayftButtonsMenu) {
             auto menu = dynamic_cast<CCMenu*>(hayftButtonsMenu);
             if (menu) {
-                // Disable the menu
                 menu->setEnabled(false);
             }
         }
     }
-    void displayMessage(const std::string& message) {
-        auto popup = Popup::create("Message", message, "OK");
-        popup->show();
-    }
 
-    void runHayftAnimation() {
-        auto hayftTTL = this->getChildByID("cmod-hayft-popup-title");
+    void updateUIWithTween(CCNode* node) {
+        // Disable the buttons menu
+        disableHayftButtonsMenu(node);
+
+        // Retrieve the buttons menu
+        auto hayftButtonsMenu = node->getChildByID("cmod-hayft-buttons-menu");
+        if (hayftButtonsMenu) {
+            // Create fade out action
+            auto fadeOut = CCFadeOut::create(1.0f); // 1 second to fade out
+
+            // Create a sequence of fade out
+            auto sequence = CCSequence::create(fadeOut, nullptr);
+
+            // Run the sequence action on the buttons menu
+            hayftButtonsMenu->runAction(sequence);
+        }
+
+        // Retrieve the title node
+        auto hayftTTL = node->getChildByID("cmod-hayft-popup-title");
         auto ttl = dynamic_cast<CCLabelBMFont*>(hayftTTL);
 
         if (ttl) {
-            auto fadeOut = CCFadeOut::create(0.5f);
+            // Create a fade-out action
+            auto fadeOut = CCFadeOut::create(1.0f);
+
             // Create a callback to change the text after fading out
-            ttl->setString("God's word for you");
+            auto changeText = CCCallFuncN::create(this, callfuncN_selector(HAYFT_Popup::changeText));
 
             // Create a fade-in action
-            auto fadeIn = CCFadeIn::create(0.5f);
+            auto fadeIn = CCFadeIn::create(1.0f);
 
             // Create a sequence of fade out, change text, and fade in
             auto sequence = CCSequence::create(fadeOut, changeText, fadeIn, nullptr);
@@ -277,6 +281,29 @@ public:
             // Run the sequence action on the title
             ttl->runAction(sequence);
         }
+    }
+
+    void changeText(CCNode* sender) {
+        auto ttl = dynamic_cast<CCLabelBMFont*>(sender);
+        if (ttl) {
+            ttl->setString("God's words for you");
+        }
+    }
+
+    void displayMessage(const std::string& message) {
+        auto alert = FLAlertLayer::create(
+            nullptr, 
+            "Message", 
+            message.c_str(), 
+            "OK", 
+            nullptr
+        );
+        alert->show();
+    }
+
+
+    void onhayftPopupInfoBtn(CCObject* sender) {
+        displayMessage("Information about this popup.");
     }
 
     void onHappyBtn(CCObject* sender) {
@@ -289,8 +316,9 @@ public:
         auto sequence = CCSequence::create(fadeOut, nullptr);
 
         // Run the sequence action on the sprite
-        disableHayftButtonsMenu();
+        disableHayftButtonsMenu(this);
         hayftButtonsMenu->runAction(sequence);
+        updateUIWithTween(this);
     }
 
     void onCalmBtn(CCObject* sender) {
@@ -499,7 +527,7 @@ public:
 
     void onHowAreYouFeelingTodayButton(CCObject* sender) 
     {
-        auto HowAreYouFeelingTodayPopup = HAYFT_Popup::create("");
+        auto HowAreYouFeelingTodayPopup = HAYFT_Popup::create(std::string(""));
         HowAreYouFeelingTodayPopup->setID("hayft-popup");
         this->addChild(HowAreYouFeelingTodayPopup);
     }
