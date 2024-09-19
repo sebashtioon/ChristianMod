@@ -669,7 +669,8 @@ public:
     void FLAlert_Clicked(FLAlertLayer* alert, bool btn2) override {
         if (alert == m_fields->VOTD_Popup) {
             if (btn2) {
-                // Handle button click
+                auto scene = ChristianModScene::create();
+                CCDirector::sharedDirector()->pushScene(scene);
             }
         }
     }
