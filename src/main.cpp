@@ -37,6 +37,13 @@ $execute { // Never used this before so it just seemed cool to do this lol
 
 
 
+int getDayOfYear() {
+    std::time_t t = std::time(nullptr);
+    std::tm* now = std::localtime(&t);
+
+    return now->tm_yday + 1;
+}
+
 // Function to load verses from the file
 std::vector<std::string> loadVerses(const std::string& filename) {
     std::vector<std::string> verses;
@@ -54,14 +61,6 @@ std::vector<std::string> loadVerses(const std::string& filename) {
     file.close();
     return verses;
 }
-
-// Function to get the current day of the year
-int getDayOfYear() {
-    time_t now = time(0);
-    tm* localtm = localtime(&now);
-    return localtm->tm_yday;
-}
-
 // specify parameters for the setup function in the Popup<...> template
 class HAYFT_Popup : public geode::Popup<std::string const&> {
 protected:
@@ -667,10 +666,13 @@ public:
                 "Verse of The Day",            // title
                 verses[200].c_str(),   // content
                 "AMEN", "PRAY",      // buttons
-                [](auto, bool btn2) {
+                [this](auto, bool btn2) {
                     if (btn2) {
                         auto scene = ChristianModScene::create();
                         CCDirector::sharedDirector()->pushScene(scene);
+                    }
+                    if (!btn2) {
+                        m_fields->VOTD_Popup->removeFromParent();
                     }
                 }
             );
