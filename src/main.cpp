@@ -560,13 +560,13 @@ public:
 
     void onInfoButton(CCObject* sender)
     {
-        std::cout<<"Nice!";
+        log::info("Info button pressed");
     }
 
 
     void onPrayButtonPressed(CCObject* sender)
     {
-        std::cout<<"Nice!";
+        log::info("Pray button pressed");
     }
 
     void onHowAreYouFeelingTodayButton(CCObject* sender) 
@@ -661,6 +661,8 @@ public:
 
 
         // TODO: USE createQuickPopup() INSTEAD OF FLAlertLayer::create() TO CREATE THE POPUP
+
+
 
         if (!m_fields->VOTD_Popup) {
             log::info("Initializing VOTD_Popup");
