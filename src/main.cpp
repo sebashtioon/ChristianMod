@@ -672,7 +672,7 @@ public:
                         CCDirector::sharedDirector()->pushScene(scene);
                     }
                     if (!btn2) {
-                        m_fields->VOTD_Popup->removeFromParent();
+                        m_fields->VOTD_Popup->setVisible(false);
                     }
                 }
             );
