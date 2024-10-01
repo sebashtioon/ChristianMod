@@ -661,17 +661,18 @@ public:
 
 
         // TODO: USE createQuickPopup() INSTEAD OF FLAlertLayer::create() TO CREATE THE POPUP
-
-
-
         if (!m_fields->VOTD_Popup) {
             log::info("Initializing VOTD_Popup");
-            m_fields->VOTD_Popup = FLAlertLayer::create(
-                nullptr, 
-                "Verse of the Day", 
-                verses[200].c_str(), 
-                "AMEN", 
-                "PRAY"
+            m_fields->VOTD_Popup = createQuickPopup(
+                "Verse of The Day",            // title
+                verses[200].c_str(),   // content
+                "AMEN", "PRAY",      // buttons
+                [](auto, bool btn2) {
+                    if (btn2) {
+                        auto scene = ChristianModScene::create();
+                        CCDirector::sharedDirector()->pushScene(scene);
+                    }
+                }
             );
             if (m_fields->VOTD_Popup) {
                 log::info("VOTD_Popup created successfully");
@@ -682,6 +683,8 @@ public:
                 return false;
             }
         }
+
+
 
         // Additional logging and null checks
         if (m_fields->VOTD_Popup) {
@@ -695,15 +698,6 @@ public:
 
         log::info("CustomMenuLayer::init() completed successfully");
         return true;
-    }
-
-    void FLAlert_Clicked(FLAlertLayer* alert, bool btn2) override {
-        if (alert->getID() == "cmod-votd-popup") {
-            if (btn2) {
-                auto scene = ChristianModScene::create();
-                CCDirector::sharedDirector()->pushScene(scene);
-            }
-        }
     }
 };
 
