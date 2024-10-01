@@ -333,10 +333,21 @@ public:
         );
         alert->show();
     }
+    void displayModuleInfo(const std::string& message) {
+        auto alert = FLAlertLayer::create(
+            nullptr, 
+            "Module Info", 
+            message.c_str(), 
+            "OK", 
+            nullptr
+        );
+        alert->show();
+    }
+
 
 
     void onhayftPopupInfoBtn(CCObject* sender) {
-        displayMessage("Information about this popup.");
+        displayModuleInfo("This module is designed to help you express your feelings and emotions through <cr>God's words</c>. Feel free to choose how you feel today and receive a verse that will help you through the day.");
     }
 
     void onHappyBtn(CCObject* sender) {
@@ -611,6 +622,7 @@ public:
     }
 };
 
+
 class $modify(CustomMenuLayer, MenuLayer) {
 public:
     struct Fields {
@@ -620,7 +632,7 @@ public:
     bool init() override {
         if (!MenuLayer::init()) return false;
 
-        log::info("CustomMenuLayer::init() started"); // log the start of the function so we know it's working
+        log::info("CustomMenuLayer::init() started");
 
         // Verify the file path
         std::string filePath = "C:\\Users\\sebas\\GDmodding\\ChristianMod\\resources\\dailybibleversesniv.txt";
@@ -631,32 +643,49 @@ public:
             return false;
         }
 
-        auto verses = loadVerses(filePath); // Load verses from the file
+        // Load the verses from the file
+        auto verses = loadVerses(filePath);
 
-        if (verses.empty()) { // check if empty
+        // Check if the verses vector is empty
+        if (verses.empty()) {
             log::error("Error: No verses found in the file.");
             return false;
         }
 
-        log::info("First verse: {}", verses[0]); // print the first verse
+        // Log the first verse to ensure it's loaded correctly
+        log::info("First verse: {}", verses[0]);
 
-        if (!m_fields->VOTD_Popup) { // check is null (which it should be)
-            log::info("Initializing VOTD_Popup"); 
+        // Initialize VOTD_Popup if it's null
+
+
+
+
+        // TODO: USE createQuickPopup() INSTEAD OF FLAlertLayer::create() TO CREATE THE POPUP
+
+        if (!m_fields->VOTD_Popup) {
+            log::info("Initializing VOTD_Popup");
             m_fields->VOTD_Popup = FLAlertLayer::create(
                 nullptr, 
                 "Verse of the Day", 
-                verses[0].c_str(), 
-                "OK", 
+                verses[200].c_str(), 
+                "AMEN", 
                 "PRAY"
-                );
+            );
+            if (m_fields->VOTD_Popup) {
+                log::info("VOTD_Popup created successfully");
+                m_fields->VOTD_Popup->setID("cmod-votd-popup");
+                m_fields->VOTD_Popup->setZOrder(5);
+            } else {
+                log::error("Failed to create VOTD_Popup");
+                return false;
+            }
         }
 
         // Additional logging and null checks
         if (m_fields->VOTD_Popup) {
             log::info("VOTD_Popup is not null, proceeding to add child.");
             this->addChild(m_fields->VOTD_Popup);
-            m_fields->VOTD_Popup->setID("cmod-votd-popup");
-            m_fields->VOTD_Popup->setZOrder(5);
+            log::info("VOTD_Popup added as child successfully");
         } else {
             log::error("VOTD_Popup is null, cannot add child.");
             return false;
@@ -667,7 +696,7 @@ public:
     }
 
     void FLAlert_Clicked(FLAlertLayer* alert, bool btn2) override {
-        if (alert == m_fields->VOTD_Popup) {
+        if (alert->getID() == "cmod-votd-popup") {
             if (btn2) {
                 auto scene = ChristianModScene::create();
                 CCDirector::sharedDirector()->pushScene(scene);
@@ -675,6 +704,7 @@ public:
         }
     }
 };
+
 
 
 class $modify(CustomCreatorLayer, CreatorLayer)
@@ -700,7 +730,6 @@ class $modify(CustomCreatorLayer, CreatorLayer)
         bottomLeftMenu->addChild(MainMenuButton);
 
         MainMenuButton->setPosition(22.000, 27.000);
-
 
         return true;
     }
