@@ -364,3 +364,5 @@
 <cr>Proverbs 3:5</c> - Trust in the Lord with all your heart and lean not on your own understanding.
 <cr>John 14:6</c> - Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me."
 <cr>John 15:13</c> - Greater love has no one than this: to lay down one’s life for one’s friends.
+<cr>1 Corinthians 15:58</c> - Therefore, my dear brothers and sisters, stand firm. Let nothing move you. Always give yourselves fully to the work of the Lord, because you know that your labor in the Lord is not in vain.
+<cr>Galatians 5:22-23</c> - But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law.
