@@ -25,6 +25,8 @@ add_library(${PROJECT_NAME} SHARED
     # Hooks
     src/Hooks/CustomCreatorLayer/CustomCreatorLayer.cpp
 
+    # Utils
+    src/Utils/Utils.hpp
     
 )
 

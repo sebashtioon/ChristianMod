@@ -21,6 +21,9 @@
 #include <Geode/cocos/base_nodes/CCNode.h>
 #include "ChristianModLayer.hpp"
 #include "../HAYFT_Popup/HAYFT_Popup.hpp"
+#include "../Utils/Utils.hpp"
+
+
 
 using namespace geode::prelude;
 
@@ -105,15 +108,28 @@ bool ChristianModLayer::init() {
     /*                                  VOTD_ttl                                  */
     /* -------------------------------------------------------------------------- */
     auto VOTD_ttl = CCLabelBMFont::create("Verse Of The Day", "bigFont.fnt");
-    VOTD_ttl->setPosition({135.f, 253.f});
+    VOTD_ttl->setPosition({135.f, 265.f});
     VOTD_ttl->setScale({0.625});
+
+    /* -------------------------------------------------------------------------- */
+    /*                                VOTD_Day_Txt                                */
+    /* -------------------------------------------------------------------------- */
+    Utils utils;
+    auto VOTD_Day_Txt = CCLabelBMFont::create(("Day " + std::to_string(utils.getDayOfYear())).c_str(), "chatFont.fnt");
+    VOTD_Day_Txt->setPosition({135.f, 250.f});
+    VOTD_Day_Txt->setScale({0.625});
     /* -------------------------------------------------------------------------- */
     /*                                VOTD_TextArea                               */
     /* -------------------------------------------------------------------------- */
-    auto VOTD_TextArea = MDTextArea::create("<cr>John 3:16</c> - For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.", 
-    {200.0, 200.0});
-    VOTD_TextArea->setPosition({135.f, 145.f});
-    VOTD_TextArea->setScale(0.975);
+
+
+    // TODO: MAKE ANOTHER ONE AND STOP BUGS
+
+    
+    /* -------------------------------------------------------------------------- */
+    /*                                Define Menus                                */
+    /* -------------------------------------------------------------------------- */
+    auto closeButtonMenu = CCMenu::create(closeButton, nullptr);
     /* -------------------------------------------------------------------------- */
     /*                                Define Menus                                */
     /* -------------------------------------------------------------------------- */
@@ -141,6 +157,7 @@ bool ChristianModLayer::init() {
     this->addChild(ttl);
     this->addChild(subttl);
     this->addChild(VOTD_ttl);
+    this->addChild(VOTD_Day_Txt);
     this->addChild(VOTD_TextArea);
 
     /* -------------------------------------------------------------------------- */
