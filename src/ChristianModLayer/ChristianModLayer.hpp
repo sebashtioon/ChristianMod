@@ -27,8 +27,7 @@ using namespace geode::prelude;
 class ChristianModLayer : public CCLayer {
 protected:
     virtual bool init();
-    virtual void onKeyBackClicked(); // when escape is pressed
-
+    virtual void keyBackClicked() override;
 public:
     static ChristianModLayer* create(); // to create the layer
 

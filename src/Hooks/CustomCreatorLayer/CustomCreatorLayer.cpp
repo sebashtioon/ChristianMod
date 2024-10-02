@@ -59,7 +59,8 @@ class $modify(CustomCreatorLayer, CreatorLayer)
     void onMainMenuButton_Pressed(CCObject* pSender)
     {
         auto scene = ChristianModScene::create();
-        CCDirector::sharedDirector()->pushScene(scene);
+        auto transition = CCTransitionFade::create(0.5, scene);
+        CCDirector::sharedDirector()->pushScene(transition);
     }
 };
 
