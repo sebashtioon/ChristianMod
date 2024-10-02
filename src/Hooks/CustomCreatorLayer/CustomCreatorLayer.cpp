@@ -31,6 +31,7 @@ class $modify(CustomCreatorLayer, CreatorLayer)
         if (!CreatorLayer::init()) return false;
         
         auto BibleIcon = CCSprite::create("BibleIcon.png"_spr);
+        BibleIcon->setPositionY(22.500);
 
         auto bottomLeftMenu = this->getChildByID("bottom-left-menu");
         auto spr = CircleButtonSprite::createWithSprite(
