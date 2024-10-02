@@ -24,7 +24,7 @@
 #include "../Utils/Utils.hpp"
 
 
-
+using namespace cocos2d;
 using namespace geode::prelude;
 
 /* -------------------------------------------------------------------------- */
@@ -125,11 +125,7 @@ bool ChristianModLayer::init() {
 
     // TODO: MAKE ANOTHER ONE AND STOP BUGS
 
-    
-    /* -------------------------------------------------------------------------- */
-    /*                                Define Menus                                */
-    /* -------------------------------------------------------------------------- */
-    auto closeButtonMenu = CCMenu::create(closeButton, nullptr);
+
     /* -------------------------------------------------------------------------- */
     /*                                Define Menus                                */
     /* -------------------------------------------------------------------------- */
@@ -158,7 +154,6 @@ bool ChristianModLayer::init() {
     this->addChild(subttl);
     this->addChild(VOTD_ttl);
     this->addChild(VOTD_Day_Txt);
-    this->addChild(VOTD_TextArea);
 
     /* -------------------------------------------------------------------------- */
     /*                             Add menus to layer                             */
@@ -176,7 +171,6 @@ bool ChristianModLayer::init() {
     closeButtonMenu->setID("cmod-close-button-menu");
     closeButton->setID("cmod-close-button");
     VOTD_ttl->setID("cmod-votd-ttl");
-    VOTD_TextArea->setID("cmod-votd-textarea");
     prayButtonMenu->setID("cmod-pray-button-menu");
     prayButton->setID("cmod-pray-button");
 
