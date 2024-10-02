@@ -25,7 +25,7 @@ add_library(${PROJECT_NAME} SHARED
     # Hooks
     src/Hooks/CustomCreatorLayer/CustomCreatorLayer.cpp
 
-    # Add any extra C++ source files here
+    
 )
 
 if (NOT DEFINED ENV{GEODE_SDK})
