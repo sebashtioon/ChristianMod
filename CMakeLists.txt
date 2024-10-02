@@ -7,13 +7,24 @@ set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 project(ChristianMod VERSION 1.0.0)
 
 add_library(${PROJECT_NAME} SHARED
+    # Main
     src/main.cpp
 
+    # Christian Mod Layer
     src/ChristianModLayer/ChristianModLayer.cpp
     src/ChristianModLayer/ChristianModLayer.hpp
 
+    # Christian Mod Scene
+    src/ChristianModScene/ChristianModScene.cpp
+    src/ChristianModScene/ChristianModScene.hpp
+
+    # HAYFT Popup
     src/HAYFT_Popup/HAYFT_Popup.cpp
     src/HAYFT_Popup/HAYFT_Popup.hpp
+
+    # Hooks
+    src/Hooks/CustomCreatorLayer/CustomCreatorLayer.cpp
+
     # Add any extra C++ source files here
 )
 
