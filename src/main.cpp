@@ -28,7 +28,7 @@ using namespace cocos2d;
 
 
 
-$execute { // Never used this before so it just seemed cool to do this lol
+$execute {
     log::info("Successfully loaded ChristianMod");
 }
 
