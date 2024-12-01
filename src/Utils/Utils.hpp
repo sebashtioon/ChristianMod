@@ -23,6 +23,7 @@
 #include <Geode/cocos/actions/CCActionInterval.h>
 #include <Geode/cocos/base_nodes/CCNode.h>
 
+using namespace geode::prelude;
 
 class Utils {
 public:
@@ -30,24 +31,6 @@ public:
         time_t t = time(0);
         struct tm* now = localtime(&t);
         return now->tm_yday + 1;
-    };
-
-    
-    std::vector<std::string> loadVerses(const std::string& filename) {
-        std::vector<std::string> verses;
-        std::ifstream file(filename);
-        if (!file.is_open()) {
-            log::error("Error: Could not open file {}", filename);
-            return verses;
-        }
-        std::string line;
-        while (std::getline(file, line)) {
-            if (!line.empty()) {
-                verses.push_back(line);
-            }
-        }
-        file.close();
-        return verses;
     }
 
 };
